@@ -156,9 +156,9 @@ object MngBrandPalettes {
     )
     /** San Gabriel Valley Tribune (SGVT) */
     val SGVT = MngBrandPalette(
-        navbar = Color(0xFFB11E35),  // #b11e35 · rgb(177, 30, 53)
+        navbar = Color(0xFFB01F36),  // #b01f36 · rgb(176, 31, 54)
         navtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        tabbar = Color(0xFFB11E35),  // #b11e35 · rgb(177, 30, 53)
+        tabbar = Color(0xFFB01F36),  // #b01f36 · rgb(176, 31, 54)
         tabactive = Color(0xFFFF6900),  // #ff6900 · rgb(255, 105, 0)
         tabinactive = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
         action = Color(0xFFFF6900),  // #ff6900 · rgb(255, 105, 0)
@@ -396,21 +396,21 @@ object MngBrandPalettes {
     )
     /** Denver Post Sports (TDPS) */
     val TDPS = MngBrandPalette(
-        navbar = Color(0xFFC75D14),  // #c75d14 · rgb(199, 93, 20)
+        navbar = Color(0xFFC75C14),  // #c75c14 · rgb(199, 92, 20)
         navtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        tabbar = Color(0xFFC75D14),  // #c75d14 · rgb(199, 93, 20)
+        tabbar = Color(0xFFC75C14),  // #c75c14 · rgb(199, 92, 20)
         tabactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
         tabinactive = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        action = Color(0xFFC75D14),  // #c75d14 · rgb(199, 93, 20)
+        action = Color(0xFFC75C14),  // #c75c14 · rgb(199, 92, 20)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
         statusbar = Color(0xFFC75D14)  // #c75d14 · rgb(199, 93, 20)
     )
     /** The East Bay Times (TEBT) */
     val TEBT = MngBrandPalette(
-        navbar = Color(0xFF557FBA),  // #557fba · rgb(85, 127, 186)
+        navbar = Color(0xFF5480BA),  // #5480ba · rgb(84, 128, 186)
         navtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        tabbar = Color(0xFF557FBA),  // #557fba · rgb(85, 127, 186)
+        tabbar = Color(0xFF5480BA),  // #5480ba · rgb(84, 128, 186)
         tabactive = Color(0xFF6BD1E6),  // #6bd1e6 · rgb(107, 209, 230)
         tabinactive = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
         action = Color(0xFF6BD1E6),  // #6bd1e6 · rgb(107, 209, 230)
