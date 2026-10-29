@@ -1,4 +1,4 @@
-// MNG Apps button pilot (DEC-07). Package name is a placeholder until the Apps team confirms it (DEC-04).
+// MNG Apps button pilot (DEC-07). Package com.mng.designsystem (confirmed 2026-10-29, DEC-04).
 package com.mng.designsystem.button
 
 import android.graphics.Paint
