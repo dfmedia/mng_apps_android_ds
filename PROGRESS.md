@@ -17,3 +17,4 @@ Legend: ✅ done · 🔄 in progress · ⏸ waiting on review/input · ⬜ not s
 - **2026-10-26** — Button pilot (DEC-07): tokens/res/values/mng_button.xml (generated) and components/button/: Widget.MNG.Button.Primary, Widget.MNG.Button.TextLink, MngTextLink (View-based UI). Not compiled yet. Core: docs/components/BUTTON.md, DEC-07 (mng_apps_core_ds). Figma: Button variables in this platform file.
 - **2026-10-26** — Figma: page Components · Button with Button/Primary (State) and Button/Text link; collection Button · Android; text styles Button/Label, Button/Text link. Core library enabled (mng_apps_core_ds).
 - **2026-10-29** — Kotlin package `com.mng.designsystem.tokens` confirmed (DEC-04, mng_apps_core_ds).
+- **2026-10-30** — DEC-09: tokens/MngTypeStyles.kt (generated): every Android text style as shipped, with asset file names for TypefaceCache (mng_apps_core_ds docs/TYPE-STYLES.md).
