@@ -20,3 +20,4 @@ Legend: ✅ done · 🔄 in progress · ⏸ waiting on review/input · ⬜ not s
 - **2026-10-30** — DEC-09: tokens/MngTypeStyles.kt (generated): every Android text style as shipped, with asset file names for TypefaceCache (mng_apps_core_ds docs/TYPE-STYLES.md).
 - **2026-10-30** — Figma: 25 text styles (DEC-09 production values) + page Type · Text styles. Article/Subhead waits on its font (MISSING-ASSETS 4.4, mng_apps_core_ds).
 - **2026-11-03** — tokens/res/values/mng_scale.xml generated and Spacing · Android variables in Figma (DEC-11, mng_apps_core_ds).
+- **2026-11-03** — DEC-12: mng_scale.xml adds breakpoints and component metrics; TextLink style uses @dimen/mng_size_touch_min. Figma: Breakpoints · Android, Components · Android; Text link bound to the touch target.
