@@ -22,3 +22,4 @@ Legend: ✅ done · 🔄 in progress · ⏸ waiting on review/input · ⬜ not s
 - **2026-11-03** — tokens/res/values/mng_scale.xml generated and Spacing · Android variables in Figma (DEC-11, mng_apps_core_ds).
 - **2026-11-03** — DEC-12: mng_scale.xml adds breakpoints and component metrics; TextLink style uses @dimen/mng_size_touch_min. Figma: Breakpoints · Android, Components · Android; Text link bound to the touch target.
 - **2026-11-03** — DEC-13: MngBrandColors.kt and flavor XML add navicon, section tab and tab label colors. Figma: Shell colors · Android (468, aliases of Core Brand colors) + Shell theme · Android (20 modes).
+- **2026-11-03** — DEC-14: control tokens generated (see mng_apps_core_ds DECISIONS DEC-14).
