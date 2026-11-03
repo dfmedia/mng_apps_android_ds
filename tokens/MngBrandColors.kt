@@ -13,8 +13,16 @@ data class MngBrandPalette(
     val action: Color,
     val alert: Color,
     val alerttext: Color,
-    val statusbar: Color
+    val statusbar: Color,
+    val sectiontabbar: Color,
+    val sectiontabtext: Color,
+    val sectiontabselected: Color,
+    val sectiontabindicator: Color,
+    val tablabelactive: Color,
+    val tablabelinactive: Color
 ) {
+    /** Top bar icon tint: alias of [navtext] (DEC-13). */
+    val navicon: Color get() = navtext
     /** Alias of [action] (PLAT-04). */
     val buy: Color get() = action
     /** Alias of [action] (PLAT-04). */
@@ -32,7 +40,13 @@ object MngBrandPalettes {
         action = Color(0xFFDAA520),  // #daa520 · rgb(218, 165, 32)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF000000)  // #000000 · rgb(0, 0, 0)
+        statusbar = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        sectiontabbar = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFFDAA520),  // #daa520 · rgb(218, 165, 32)
+        tablabelinactive = Color(0xFF000000)  // #000000 · rgb(0, 0, 0)
     )
     /** Chicago Tribune (CT) */
     val CT = MngBrandPalette(
@@ -44,7 +58,13 @@ object MngBrandPalettes {
         action = Color(0xFF9DD1F5),  // #9dd1f5 · rgb(157, 209, 245)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF004E87)  // #004e87 · rgb(0, 78, 135)
+        statusbar = Color(0xFF004E87),  // #004e87 · rgb(0, 78, 135)
+        sectiontabbar = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabtext = Color(0xFF2C2D2D),  // #2c2d2d · rgb(44, 45, 45)
+        sectiontabselected = Color(0xFF004E87),  // #004e87 · rgb(0, 78, 135)
+        sectiontabindicator = Color(0xFF004E87),  // #004e87 · rgb(0, 78, 135)
+        tablabelactive = Color(0xFF9DD1F5),  // #9dd1f5 · rgb(157, 209, 245)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Daily Press (DP) */
     val DP = MngBrandPalette(
@@ -56,7 +76,13 @@ object MngBrandPalettes {
         action = Color(0xFF005F7E),  // #005f7e · rgb(0, 95, 126)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF000000)  // #000000 · rgb(0, 0, 0)
+        statusbar = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        sectiontabbar = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabtext = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        sectiontabselected = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        sectiontabindicator = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelactive = Color(0xFF3674A9),  // #3674a9 · rgb(54, 116, 169)
+        tablabelinactive = Color(0xFF000000)  // #000000 · rgb(0, 0, 0)
     )
     /** Hartford Courant (HC) */
     val HC = MngBrandPalette(
@@ -68,7 +94,13 @@ object MngBrandPalettes {
         action = Color(0xFF4FA8D1),  // #4fa8d1 · rgb(79, 168, 209)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF000000)  // #000000 · rgb(0, 0, 0)
+        statusbar = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        sectiontabbar = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF4FA8D1),  // #4fa8d1 · rgb(79, 168, 209)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Morning Call (MC) */
     val MC = MngBrandPalette(
@@ -80,7 +112,13 @@ object MngBrandPalettes {
         action = Color(0xFF539CC4),  // #539cc4 · rgb(83, 156, 196)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF000000)  // #000000 · rgb(0, 0, 0)
+        statusbar = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        sectiontabbar = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabtext = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        sectiontabselected = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        sectiontabindicator = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelactive = Color(0xFF539CC4),  // #539cc4 · rgb(83, 156, 196)
+        tablabelinactive = Color(0xFF000000)  // #000000 · rgb(0, 0, 0)
     )
     /** New York Daily News (NYDN) */
     val NYDN = MngBrandPalette(
@@ -92,7 +130,13 @@ object MngBrandPalettes {
         action = Color(0xFF4492E0),  // #4492e0 · rgb(68, 146, 224)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF333333)  // #333333 · rgb(51, 51, 51)
+        statusbar = Color(0xFF333333),  // #333333 · rgb(51, 51, 51)
+        sectiontabbar = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabtext = Color(0xFF333333),  // #333333 · rgb(51, 51, 51)
+        sectiontabselected = Color(0xFF333333),  // #333333 · rgb(51, 51, 51)
+        sectiontabindicator = Color(0xFF333333),  // #333333 · rgb(51, 51, 51)
+        tablabelactive = Color(0xFF4492E0),  // #4492e0 · rgb(68, 146, 224)
+        tablabelinactive = Color(0xFF000000)  // #000000 · rgb(0, 0, 0)
     )
     /** Orange County Register (OCR) */
     val OCR = MngBrandPalette(
@@ -104,7 +148,13 @@ object MngBrandPalettes {
         action = Color(0xFFB04F0F),  // #b04f0f · rgb(176, 79, 15)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFFAC4E0F)  // #ac4e0f · rgb(172, 78, 15)
+        statusbar = Color(0xFFAC4E0F),  // #ac4e0f · rgb(172, 78, 15)
+        sectiontabbar = Color(0xFFB04F0F),  // #b04f0f · rgb(176, 79, 15)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Orlando Sentinel (OS) */
     val OS = MngBrandPalette(
@@ -116,7 +166,13 @@ object MngBrandPalettes {
         action = Color(0xFF15919D),  // #15919d · rgb(21, 145, 157)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF000000)  // #000000 · rgb(0, 0, 0)
+        statusbar = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        sectiontabbar = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabtext = Color(0xFF333333),  // #333333 · rgb(51, 51, 51)
+        sectiontabselected = Color(0xFF333333),  // #333333 · rgb(51, 51, 51)
+        sectiontabindicator = Color(0xFF333333),  // #333333 · rgb(51, 51, 51)
+        tablabelactive = Color(0xFF15919D),  // #15919d · rgb(21, 145, 157)
+        tablabelinactive = Color(0xFF333333)  // #333333 · rgb(51, 51, 51)
     )
     /** Petaluma Argus-Courier (PAC) */
     val PAC = MngBrandPalette(
@@ -128,7 +184,13 @@ object MngBrandPalettes {
         action = Color(0xFFA06318),  // #a06318 · rgb(160, 99, 24)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFFA06318)  // #a06318 · rgb(160, 99, 24)
+        statusbar = Color(0xFFA06318),  // #a06318 · rgb(160, 99, 24)
+        sectiontabbar = Color(0xFFA06318),  // #a06318 · rgb(160, 99, 24)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFFFFEA00),  // #ffea00 · rgb(255, 234, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Pasadena Star News (PSN) */
     val PSN = MngBrandPalette(
@@ -140,7 +202,13 @@ object MngBrandPalettes {
         action = Color(0xFFB93611),  // #b93611 · rgb(185, 54, 17)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFFA6371E)  // #a6371e · rgb(166, 55, 30)
+        statusbar = Color(0xFFA6371E),  // #a6371e · rgb(166, 55, 30)
+        sectiontabbar = Color(0xFFB93611),  // #b93611 · rgb(185, 54, 17)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFFFF6900),  // #ff6900 · rgb(255, 105, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** The San Diego Union-Tribune (SDUT) */
     val SDUT = MngBrandPalette(
@@ -152,7 +220,13 @@ object MngBrandPalettes {
         action = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF000000)  // #000000 · rgb(0, 0, 0)
+        statusbar = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        sectiontabbar = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** San Gabriel Valley Tribune (SGVT) */
     val SGVT = MngBrandPalette(
@@ -164,7 +238,13 @@ object MngBrandPalettes {
         action = Color(0xFFFF6900),  // #ff6900 · rgb(255, 105, 0)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFFB11E35)  // #b11e35 · rgb(177, 30, 53)
+        statusbar = Color(0xFFB11E35),  // #b11e35 · rgb(177, 30, 53)
+        sectiontabbar = Color(0xFFB01F36),  // #b01f36 · rgb(176, 31, 54)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFFFF6900),  // #ff6900 · rgb(255, 105, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Sonoma Index Tribune (SIT) */
     val SIT = MngBrandPalette(
@@ -176,7 +256,13 @@ object MngBrandPalettes {
         action = Color(0xFF0F73A9),  // #0f73a9 · rgb(15, 115, 169)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF0F73A9)  // #0f73a9 · rgb(15, 115, 169)
+        statusbar = Color(0xFF0F73A9),  // #0f73a9 · rgb(15, 115, 169)
+        sectiontabbar = Color(0xFF0F73A9),  // #0f73a9 · rgb(15, 115, 169)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFFFFEA00),  // #ffea00 · rgb(255, 234, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Sun Sentinel (SS) */
     val SS = MngBrandPalette(
@@ -188,7 +274,13 @@ object MngBrandPalettes {
         action = Color(0xFF761113),  // #761113 · rgb(118, 17, 19)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF000000)  // #000000 · rgb(0, 0, 0)
+        statusbar = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        sectiontabbar = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabtext = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        sectiontabselected = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        sectiontabindicator = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelactive = Color(0xFF761113),  // #761113 · rgb(118, 17, 19)
+        tablabelinactive = Color(0xFF000000)  // #000000 · rgb(0, 0, 0)
     )
     /** Buffzone (TB) */
     val TB = MngBrandPalette(
@@ -200,7 +292,13 @@ object MngBrandPalettes {
         action = Color(0xFF4351AF),  // #4351af · rgb(67, 81, 175)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF4351AF)  // #4351af · rgb(67, 81, 175)
+        statusbar = Color(0xFF4351AF),  // #4351af · rgb(67, 81, 175)
+        sectiontabbar = Color(0xFF4351AF),  // #4351af · rgb(67, 81, 175)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Bay Area News (TBAN) */
     val TBAN = MngBrandPalette(
@@ -212,7 +310,13 @@ object MngBrandPalettes {
         action = Color(0xFF004E87),  // #004e87 · rgb(0, 78, 135)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF152C4F)  // #152c4f · rgb(21, 44, 79)
+        statusbar = Color(0xFF152C4F),  // #152c4f · rgb(21, 44, 79)
+        sectiontabbar = Color(0xFF004E87),  // #004e87 · rgb(0, 78, 135)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Boulder County Preps (TBCP) */
     val TBCP = MngBrandPalette(
@@ -224,7 +328,13 @@ object MngBrandPalettes {
         action = Color(0xFF3F51B5),  // #3f51b5 · rgb(63, 81, 181)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF3F51B5)  // #3f51b5 · rgb(63, 81, 181)
+        statusbar = Color(0xFF3F51B5),  // #3f51b5 · rgb(63, 81, 181)
+        sectiontabbar = Color(0xFF3F51B5),  // #3f51b5 · rgb(63, 81, 181)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Broomfield Enterprise News (TBE) */
     val TBE = MngBrandPalette(
@@ -236,7 +346,13 @@ object MngBrandPalettes {
         action = Color(0xFF4351AF),  // #4351af · rgb(67, 81, 175)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF4351AF)  // #4351af · rgb(67, 81, 175)
+        statusbar = Color(0xFF4351AF),  // #4351af · rgb(67, 81, 175)
+        sectiontabbar = Color(0xFF4351AF),  // #4351af · rgb(67, 81, 175)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Boston Herald (TBH) */
     val TBH = MngBrandPalette(
@@ -248,7 +364,13 @@ object MngBrandPalettes {
         action = Color(0xFF00538A),  // #00538a · rgb(0, 83, 138)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF255E97)  // #255e97 · rgb(37, 94, 151)
+        statusbar = Color(0xFF255E97),  // #255e97 · rgb(37, 94, 151)
+        sectiontabbar = Color(0xFF00538A),  // #00538a · rgb(0, 83, 138)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF9DD1F5),  // #9dd1f5 · rgb(157, 209, 245)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Boston Herald Sports (TBHS) */
     val TBHS = MngBrandPalette(
@@ -260,7 +382,13 @@ object MngBrandPalettes {
         action = Color(0xFFB01E35),  // #b01e35 · rgb(176, 30, 53)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFFC00030)  // #c00030 · rgb(192, 0, 48)
+        statusbar = Color(0xFFC00030),  // #c00030 · rgb(192, 0, 48)
+        sectiontabbar = Color(0xFFB01F36),  // #b01f36 · rgb(176, 31, 54)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF004E87),  // #004e87 · rgb(0, 78, 135)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Canon City Daily Record (TCCDR) */
     val TCCDR = MngBrandPalette(
@@ -272,7 +400,13 @@ object MngBrandPalettes {
         action = Color(0xFF32408F),  // #32408f · rgb(50, 64, 143)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF353F8A)  // #353f8a · rgb(53, 63, 138)
+        statusbar = Color(0xFF353F8A),  // #353f8a · rgb(53, 63, 138)
+        sectiontabbar = Color(0xFF32408F),  // #32408f · rgb(50, 64, 143)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Chico Enterprise Record (TCE) */
     val TCE = MngBrandPalette(
@@ -284,7 +418,13 @@ object MngBrandPalettes {
         action = Color(0xFF32408F),  // #32408f · rgb(50, 64, 143)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF1F4D83)  // #1f4d83 · rgb(31, 77, 131)
+        statusbar = Color(0xFF1F4D83),  // #1f4d83 · rgb(31, 77, 131)
+        sectiontabbar = Color(0xFF32408F),  // #32408f · rgb(50, 64, 143)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Colorado Hometown Weekly (TCHW) */
     val TCHW = MngBrandPalette(
@@ -296,7 +436,13 @@ object MngBrandPalettes {
         action = Color(0xFF353F8A),  // #353f8a · rgb(53, 63, 138)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF353F8A)  // #353f8a · rgb(53, 63, 138)
+        statusbar = Color(0xFF353F8A),  // #353f8a · rgb(53, 63, 138)
+        sectiontabbar = Color(0xFF353F8A),  // #353f8a · rgb(53, 63, 138)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** The Citizens' Voice (TCV) */
     val TCV = MngBrandPalette(
@@ -308,7 +454,13 @@ object MngBrandPalettes {
         action = Color(0xFF434953),  // #434953 · rgb(67, 73, 83)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF434953)  // #434953 · rgb(67, 73, 83)
+        statusbar = Color(0xFF434953),  // #434953 · rgb(67, 73, 83)
+        sectiontabbar = Color(0xFF434953),  // #434953 · rgb(67, 73, 83)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Daily Breeze (TDB) */
     val TDB = MngBrandPalette(
@@ -320,7 +472,13 @@ object MngBrandPalettes {
         action = Color(0xFF9DD1F5),  // #9dd1f5 · rgb(157, 209, 245)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF2E6C90)  // #2e6c90 · rgb(46, 108, 144)
+        statusbar = Color(0xFF2E6C90),  // #2e6c90 · rgb(46, 108, 144)
+        sectiontabbar = Color(0xFF004E87),  // #004e87 · rgb(0, 78, 135)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF9DD1F5),  // #9dd1f5 · rgb(157, 209, 245)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** The Daily Camera (TDC) */
     val TDC = MngBrandPalette(
@@ -332,7 +490,13 @@ object MngBrandPalettes {
         action = Color(0xFF007639),  // #007639 · rgb(0, 118, 57)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF007639)  // #007639 · rgb(0, 118, 57)
+        statusbar = Color(0xFF007639),  // #007639 · rgb(0, 118, 57)
+        sectiontabbar = Color(0xFF007639),  // #007639 · rgb(0, 118, 57)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Delaware County Daily Times (TDCD) */
     val TDCD = MngBrandPalette(
@@ -344,7 +508,13 @@ object MngBrandPalettes {
         action = Color(0xFF5B9BC8),  // #5b9bc8 · rgb(91, 155, 200)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF4891B3)  // #4891b3 · rgb(72, 145, 179)
+        statusbar = Color(0xFF4891B3),  // #4891b3 · rgb(72, 145, 179)
+        sectiontabbar = Color(0xFF5B9BC8),  // #5b9bc8 · rgb(91, 155, 200)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Daily Freeman (TDF) */
     val TDF = MngBrandPalette(
@@ -356,7 +526,13 @@ object MngBrandPalettes {
         action = Color(0xFF9DD1F5),  // #9dd1f5 · rgb(157, 209, 245)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF1B6BAD)  // #1b6bad · rgb(27, 107, 173)
+        statusbar = Color(0xFF1B6BAD),  // #1b6bad · rgb(27, 107, 173)
+        sectiontabbar = Color(0xFF004E87),  // #004e87 · rgb(0, 78, 135)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF9DD1F5),  // #9dd1f5 · rgb(157, 209, 245)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Daily Herald (TDH) */
     val TDH = MngBrandPalette(
@@ -368,7 +544,13 @@ object MngBrandPalettes {
         action = Color(0xFF0072B4),  // #0072b4 · rgb(0, 114, 180)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF0072B4)  // #0072b4 · rgb(0, 114, 180)
+        statusbar = Color(0xFF0072B4),  // #0072b4 · rgb(0, 114, 180)
+        sectiontabbar = Color(0xFF0072B4),  // #0072b4 · rgb(0, 114, 180)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Daily Local Weschester (TDLW) */
     val TDLW = MngBrandPalette(
@@ -380,7 +562,13 @@ object MngBrandPalettes {
         action = Color(0xFF1591B7),  // #1591b7 · rgb(21, 145, 183)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF1591B5)  // #1591b5 · rgb(21, 145, 181)
+        statusbar = Color(0xFF1591B5),  // #1591b5 · rgb(21, 145, 181)
+        sectiontabbar = Color(0xFF1591B7),  // #1591b7 · rgb(21, 145, 183)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** The Denver Post (TDP) */
     val TDP = MngBrandPalette(
@@ -392,7 +580,13 @@ object MngBrandPalettes {
         action = Color(0xFFF7A430),  // #f7a430 · rgb(247, 164, 48)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF000000)  // #000000 · rgb(0, 0, 0)
+        statusbar = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        sectiontabbar = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFFF7A430),  // #f7a430 · rgb(247, 164, 48)
+        tablabelinactive = Color(0xFF999999)  // #999999 · rgb(153, 153, 153)
     )
     /** Denver Post Sports (TDPS) */
     val TDPS = MngBrandPalette(
@@ -404,7 +598,13 @@ object MngBrandPalettes {
         action = Color(0xFFC75C14),  // #c75c14 · rgb(199, 92, 20)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFFC75D14)  // #c75d14 · rgb(199, 93, 20)
+        statusbar = Color(0xFFC75D14),  // #c75d14 · rgb(199, 93, 20)
+        sectiontabbar = Color(0xFFC75C14),  // #c75c14 · rgb(199, 92, 20)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** The East Bay Times (TEBT) */
     val TEBT = MngBrandPalette(
@@ -416,7 +616,13 @@ object MngBrandPalettes {
         action = Color(0xFF6BD1E6),  // #6bd1e6 · rgb(107, 209, 230)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF557FBA)  // #557fba · rgb(85, 127, 186)
+        statusbar = Color(0xFF557FBA),  // #557fba · rgb(85, 127, 186)
+        sectiontabbar = Color(0xFF5480BA),  // #5480ba · rgb(84, 128, 186)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF6BD1E6),  // #6bd1e6 · rgb(107, 209, 230)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Estes Park Trail Gazette (TEPTG) */
     val TEPTG = MngBrandPalette(
@@ -428,7 +634,13 @@ object MngBrandPalettes {
         action = Color(0xFF32408F),  // #32408f · rgb(50, 64, 143)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF3E8E75)  // #3e8e75 · rgb(62, 142, 117)
+        statusbar = Color(0xFF3E8E75),  // #3e8e75 · rgb(62, 142, 117)
+        sectiontabbar = Color(0xFF32408F),  // #32408f · rgb(50, 64, 143)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Eureka Times Standard (TETS) */
     val TETS = MngBrandPalette(
@@ -440,7 +652,13 @@ object MngBrandPalettes {
         action = Color(0xFF32408F),  // #32408f · rgb(50, 64, 143)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF353F8A)  // #353f8a · rgb(53, 63, 138)
+        statusbar = Color(0xFF353F8A),  // #353f8a · rgb(53, 63, 138)
+        sectiontabbar = Color(0xFF32408F),  // #32408f · rgb(50, 64, 143)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Fort Morgan Times (TFMT) */
     val TFMT = MngBrandPalette(
@@ -452,7 +670,13 @@ object MngBrandPalettes {
         action = Color(0xFF32408F),  // #32408f · rgb(50, 64, 143)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF32408F)  // #32408f · rgb(50, 64, 143)
+        statusbar = Color(0xFF32408F),  // #32408f · rgb(50, 64, 143)
+        sectiontabbar = Color(0xFF32408F),  // #32408f · rgb(50, 64, 143)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Greeley Tribune (TGT) */
     val TGT = MngBrandPalette(
@@ -464,7 +688,13 @@ object MngBrandPalettes {
         action = Color(0xFF44687F),  // #44687f · rgb(68, 104, 127)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF536E7F)  // #536e7f · rgb(83, 110, 127)
+        statusbar = Color(0xFF536E7F),  // #536e7f · rgb(83, 110, 127)
+        sectiontabbar = Color(0xFF44687F),  // #44687f · rgb(68, 104, 127)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Inland Valley Daily Bulletin (TIVDB) */
     val TIVDB = MngBrandPalette(
@@ -476,7 +706,13 @@ object MngBrandPalettes {
         action = Color(0xFF004E87),  // #004e87 · rgb(0, 78, 135)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF004E87)  // #004e87 · rgb(0, 78, 135)
+        statusbar = Color(0xFF004E87),  // #004e87 · rgb(0, 78, 135)
+        sectiontabbar = Color(0xFF004E87),  // #004e87 · rgb(0, 78, 135)
+        sectiontabtext = Color(0xFFCCCCCC),  // #cccccc · rgb(204, 204, 204)
+        sectiontabselected = Color(0xFFCCCCCC),  // #cccccc · rgb(204, 204, 204)
+        sectiontabindicator = Color(0xFFCCCCCC),  // #cccccc · rgb(204, 204, 204)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFCCCCCC)  // #cccccc · rgb(204, 204, 204)
     )
     /** Journal Advocate (TJA) */
     val TJA = MngBrandPalette(
@@ -488,7 +724,13 @@ object MngBrandPalettes {
         action = Color(0xFF32408F),  // #32408f · rgb(50, 64, 143)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF353F8A)  // #353f8a · rgb(53, 63, 138)
+        statusbar = Color(0xFF353F8A),  // #353f8a · rgb(53, 63, 138)
+        sectiontabbar = Color(0xFF32408F),  // #32408f · rgb(50, 64, 143)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Los Angeles Daily News (TLADN) */
     val TLADN = MngBrandPalette(
@@ -500,7 +742,13 @@ object MngBrandPalettes {
         action = Color(0xFFB93611),  // #b93611 · rgb(185, 54, 17)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFFAB4022)  // #ab4022 · rgb(171, 64, 34)
+        statusbar = Color(0xFFAB4022),  // #ab4022 · rgb(171, 64, 34)
+        sectiontabbar = Color(0xFFB93611),  // #b93611 · rgb(185, 54, 17)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Long Beach Press-Telegram (TLBPT) */
     val TLBPT = MngBrandPalette(
@@ -512,7 +760,13 @@ object MngBrandPalettes {
         action = Color(0xFF32408F),  // #32408f · rgb(50, 64, 143)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF2C47A0)  // #2c47a0 · rgb(44, 71, 160)
+        statusbar = Color(0xFF2C47A0),  // #2c47a0 · rgb(44, 71, 160)
+        sectiontabbar = Color(0xFF32408F),  // #32408f · rgb(50, 64, 143)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Loveland Reporter Herald (TLR) */
     val TLR = MngBrandPalette(
@@ -524,7 +778,13 @@ object MngBrandPalettes {
         action = Color(0xFF4E5DCA),  // #4e5dca · rgb(78, 93, 202)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF4E5DCA)  // #4e5dca · rgb(78, 93, 202)
+        statusbar = Color(0xFF4E5DCA),  // #4e5dca · rgb(78, 93, 202)
+        sectiontabbar = Color(0xFF4E5DCA),  // #4e5dca · rgb(78, 93, 202)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Lowell Sun News for Mobile (TLS) */
     val TLS = MngBrandPalette(
@@ -536,7 +796,13 @@ object MngBrandPalettes {
         action = Color(0xFFB93611),  // #b93611 · rgb(185, 54, 17)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFFAB4022)  // #ab4022 · rgb(171, 64, 34)
+        statusbar = Color(0xFFAB4022),  // #ab4022 · rgb(171, 64, 34)
+        sectiontabbar = Color(0xFFB93611),  // #b93611 · rgb(185, 54, 17)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Longmont Times-Call for Mobile (TLTC) */
     val TLTC = MngBrandPalette(
@@ -548,7 +814,13 @@ object MngBrandPalettes {
         action = Color(0xFF007CBA),  // #007cba · rgb(0, 124, 186)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF007CBA)  // #007cba · rgb(0, 124, 186)
+        statusbar = Color(0xFF007CBA),  // #007cba · rgb(0, 124, 186)
+        sectiontabbar = Color(0xFF007CBA),  // #007cba · rgb(0, 124, 186)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Monterey County Herald (TMCH) */
     val TMCH = MngBrandPalette(
@@ -560,7 +832,13 @@ object MngBrandPalettes {
         action = Color(0xFF3C6292),  // #3c6292 · rgb(60, 98, 146)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF3C6292)  // #3c6292 · rgb(60, 98, 146)
+        statusbar = Color(0xFF3C6292),  // #3c6292 · rgb(60, 98, 146)
+        sectiontabbar = Color(0xFF3C6292),  // #3c6292 · rgb(60, 98, 146)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Macomb Daily (TMD) */
     val TMD = MngBrandPalette(
@@ -572,7 +850,13 @@ object MngBrandPalettes {
         action = Color(0xFF3A527A),  // #3a527a · rgb(58, 82, 122)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF3F5177)  // #3f5177 · rgb(63, 81, 119)
+        statusbar = Color(0xFF3F5177),  // #3f5177 · rgb(63, 81, 119)
+        sectiontabbar = Color(0xFF3A527A),  // #3a527a · rgb(58, 82, 122)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Marin Independent Journal News (TMI) */
     val TMI = MngBrandPalette(
@@ -584,7 +868,13 @@ object MngBrandPalettes {
         action = Color(0xFF32408F),  // #32408f · rgb(50, 64, 143)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF1F4D83)  // #1f4d83 · rgb(31, 77, 131)
+        statusbar = Color(0xFF1F4D83),  // #1f4d83 · rgb(31, 77, 131)
+        sectiontabbar = Color(0xFF32408F),  // #32408f · rgb(50, 64, 143)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** The Morning Journal (TMJ) */
     val TMJ = MngBrandPalette(
@@ -596,7 +886,13 @@ object MngBrandPalettes {
         action = Color(0xFFB93611),  // #b93611 · rgb(185, 54, 17)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFFBC3B10)  // #bc3b10 · rgb(188, 59, 16)
+        statusbar = Color(0xFFBC3B10),  // #bc3b10 · rgb(188, 59, 16)
+        sectiontabbar = Color(0xFFB93611),  // #b93611 · rgb(185, 54, 17)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** The Mercury News (TMN) */
     val TMN = MngBrandPalette(
@@ -608,7 +904,13 @@ object MngBrandPalettes {
         action = Color(0xFF004E87),  // #004e87 · rgb(0, 78, 135)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF004E87)  // #004e87 · rgb(0, 78, 135)
+        statusbar = Color(0xFF004E87),  // #004e87 · rgb(0, 78, 135)
+        sectiontabbar = Color(0xFF004E87),  // #004e87 · rgb(0, 78, 135)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** The Morning Sun (TMS) */
     val TMS = MngBrandPalette(
@@ -620,7 +922,13 @@ object MngBrandPalettes {
         action = Color(0xFF3A527A),  // #3a527a · rgb(58, 82, 122)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF3F5177)  // #3f5177 · rgb(63, 81, 119)
+        statusbar = Color(0xFF3F5177),  // #3f5177 · rgb(63, 81, 119)
+        sectiontabbar = Color(0xFF3A527A),  // #3a527a · rgb(58, 82, 122)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** The News Herald (TNH) */
     val TNH = MngBrandPalette(
@@ -632,7 +940,13 @@ object MngBrandPalettes {
         action = Color(0xFFB93611),  // #b93611 · rgb(185, 54, 17)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFFAB4022)  // #ab4022 · rgb(171, 64, 34)
+        statusbar = Color(0xFFAB4022),  // #ab4022 · rgb(171, 64, 34)
+        sectiontabbar = Color(0xFFB93611),  // #b93611 · rgb(185, 54, 17)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Oneida Daily Dispatch (TOD) */
     val TOD = MngBrandPalette(
@@ -644,7 +958,13 @@ object MngBrandPalettes {
         action = Color(0xFFB93611),  // #b93611 · rgb(185, 54, 17)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFFB92111)  // #b92111 · rgb(185, 33, 17)
+        statusbar = Color(0xFFB92111),  // #b92111 · rgb(185, 33, 17)
+        sectiontabbar = Color(0xFFB93611),  // #b93611 · rgb(185, 54, 17)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** The Oakland Press (TOP) */
     val TOP = MngBrandPalette(
@@ -656,7 +976,13 @@ object MngBrandPalettes {
         action = Color(0xFF004E87),  // #004e87 · rgb(0, 78, 135)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF0B151D)  // #0b151d · rgb(11, 21, 29)
+        statusbar = Color(0xFF0B151D),  // #0b151d · rgb(11, 21, 29)
+        sectiontabbar = Color(0xFF0B151E),  // #0b151e · rgb(11, 21, 30)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF004E87),  // #004e87 · rgb(0, 78, 135)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** The Press Democrat (TPD) */
     val TPD = MngBrandPalette(
@@ -668,7 +994,13 @@ object MngBrandPalettes {
         action = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF000000)  // #000000 · rgb(0, 0, 0)
+        statusbar = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        sectiontabbar = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF999999),  // #999999 · rgb(153, 153, 153)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** The Press-Enterprise (TPE) */
     val TPE = MngBrandPalette(
@@ -680,7 +1012,13 @@ object MngBrandPalettes {
         action = Color(0xFFB93611),  // #b93611 · rgb(185, 54, 17)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFFA6371E)  // #a6371e · rgb(166, 55, 30)
+        statusbar = Color(0xFFA6371E),  // #a6371e · rgb(166, 55, 30)
+        sectiontabbar = Color(0xFFB93611),  // #b93611 · rgb(185, 54, 17)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFFFF6900),  // #ff6900 · rgb(255, 105, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** The Pottstown Mercury (TPM) */
     val TPM = MngBrandPalette(
@@ -692,7 +1030,13 @@ object MngBrandPalettes {
         action = Color(0xFFB93611),  // #b93611 · rgb(185, 54, 17)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFFBC3B10)  // #bc3b10 · rgb(188, 59, 16)
+        statusbar = Color(0xFFBC3B10),  // #bc3b10 · rgb(188, 59, 16)
+        sectiontabbar = Color(0xFFB93611),  // #b93611 · rgb(185, 54, 17)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** The Reporter for Mobile (TR) */
     val TR = MngBrandPalette(
@@ -704,7 +1048,13 @@ object MngBrandPalettes {
         action = Color(0xFF007CBA),  // #007cba · rgb(0, 124, 186)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF007CBA)  // #007cba · rgb(0, 124, 186)
+        statusbar = Color(0xFF007CBA),  // #007cba · rgb(0, 124, 186)
+        sectiontabbar = Color(0xFF007CBA),  // #007cba · rgb(0, 124, 186)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Redlands Daily Facts (TRDF) */
     val TRDF = MngBrandPalette(
@@ -716,7 +1066,13 @@ object MngBrandPalettes {
         action = Color(0xFF32408F),  // #32408f · rgb(50, 64, 143)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF2C47A0)  // #2c47a0 · rgb(44, 71, 160)
+        statusbar = Color(0xFF2C47A0),  // #2c47a0 · rgb(44, 71, 160)
+        sectiontabbar = Color(0xFF32408F),  // #32408f · rgb(50, 64, 143)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF9DD1F5),  // #9dd1f5 · rgb(157, 209, 245)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Reading Eagle (TRE) */
     val TRE = MngBrandPalette(
@@ -728,7 +1084,13 @@ object MngBrandPalettes {
         action = Color(0xFF004E87),  // #004e87 · rgb(0, 78, 135)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF000000)  // #000000 · rgb(0, 0, 0)
+        statusbar = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        sectiontabbar = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF004E87),  // #004e87 · rgb(0, 78, 135)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Republican-Herald (TRH) */
     val TRH = MngBrandPalette(
@@ -740,7 +1102,13 @@ object MngBrandPalettes {
         action = Color(0xFF434953),  // #434953 · rgb(67, 73, 83)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF434953)  // #434953 · rgb(67, 73, 83)
+        statusbar = Color(0xFF434953),  // #434953 · rgb(67, 73, 83)
+        sectiontabbar = Color(0xFF434953),  // #434953 · rgb(67, 73, 83)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Royal Oak Tribune (TROT) */
     val TROT = MngBrandPalette(
@@ -752,7 +1120,13 @@ object MngBrandPalettes {
         action = Color(0xFF013A67),  // #013a67 · rgb(1, 58, 103)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF013A67)  // #013a67 · rgb(1, 58, 103)
+        statusbar = Color(0xFF013A67),  // #013a67 · rgb(1, 58, 103)
+        sectiontabbar = Color(0xFF013A67),  // #013a67 · rgb(1, 58, 103)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** The Troy Record (TRR) */
     val TRR = MngBrandPalette(
@@ -764,7 +1138,13 @@ object MngBrandPalettes {
         action = Color(0xFFB93611),  // #b93611 · rgb(185, 54, 17)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFFBC3B10)  // #bc3b10 · rgb(188, 59, 16)
+        statusbar = Color(0xFFBC3B10),  // #bc3b10 · rgb(188, 59, 16)
+        sectiontabbar = Color(0xFFB93611),  // #b93611 · rgb(185, 54, 17)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Saratogian (TSAR) */
     val TSAR = MngBrandPalette(
@@ -776,7 +1156,13 @@ object MngBrandPalettes {
         action = Color(0xFF004E87),  // #004e87 · rgb(0, 78, 135)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF000000)  // #000000 · rgb(0, 0, 0)
+        statusbar = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        sectiontabbar = Color(0xFFF5F5F5),  // #f5f5f5 · rgb(245, 245, 245)
+        sectiontabtext = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        sectiontabselected = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        sectiontabindicator = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFF000000)  // #000000 · rgb(0, 0, 0)
     )
     /** The San Bernardino Sun (TSBS) */
     val TSBS = MngBrandPalette(
@@ -788,7 +1174,13 @@ object MngBrandPalettes {
         action = Color(0xFFB93611),  // #b93611 · rgb(185, 54, 17)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFFA6371E)  // #a6371e · rgb(166, 55, 30)
+        statusbar = Color(0xFFA6371E),  // #a6371e · rgb(166, 55, 30)
+        sectiontabbar = Color(0xFFB93611),  // #b93611 · rgb(185, 54, 17)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFFFF6900),  // #ff6900 · rgb(255, 105, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Santa Cruz Sentinel (TSCS) */
     val TSCS = MngBrandPalette(
@@ -800,7 +1192,13 @@ object MngBrandPalettes {
         action = Color(0xFF32408F),  // #32408f · rgb(50, 64, 143)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF353F8A)  // #353f8a · rgb(53, 63, 138)
+        statusbar = Color(0xFF353F8A),  // #353f8a · rgb(53, 63, 138)
+        sectiontabbar = Color(0xFF32408F),  // #32408f · rgb(50, 64, 143)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Sentinel and Enterprise (TSEB) */
     val TSEB = MngBrandPalette(
@@ -812,7 +1210,13 @@ object MngBrandPalettes {
         action = Color(0xFFB93611),  // #b93611 · rgb(185, 54, 17)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFFBC3B10)  // #bc3b10 · rgb(188, 59, 16)
+        statusbar = Color(0xFFBC3B10),  // #bc3b10 · rgb(188, 59, 16)
+        sectiontabbar = Color(0xFFB93611),  // #b93611 · rgb(185, 54, 17)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** St. Paul Pioneer Press (TSPPP) */
     val TSPPP = MngBrandPalette(
@@ -824,7 +1228,13 @@ object MngBrandPalettes {
         action = Color(0xFF004E87),  // #004e87 · rgb(0, 78, 135)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF557FBA)  // #557fba · rgb(85, 127, 186)
+        statusbar = Color(0xFF557FBA),  // #557fba · rgb(85, 127, 186)
+        sectiontabbar = Color(0xFF004E87),  // #004e87 · rgb(0, 78, 135)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** The Standard-Speaker (TSS) */
     val TSS = MngBrandPalette(
@@ -836,7 +1246,13 @@ object MngBrandPalettes {
         action = Color(0xFF434953),  // #434953 · rgb(67, 73, 83)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF434953)  // #434953 · rgb(67, 73, 83)
+        statusbar = Color(0xFF434953),  // #434953 · rgb(67, 73, 83)
+        sectiontabbar = Color(0xFF434953),  // #434953 · rgb(67, 73, 83)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Silicon Valley (TSV) */
     val TSV = MngBrandPalette(
@@ -848,7 +1264,13 @@ object MngBrandPalettes {
         action = Color(0xFF004E87),  // #004e87 · rgb(0, 78, 135)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF557FBA)  // #557fba · rgb(85, 127, 186)
+        statusbar = Color(0xFF557FBA),  // #557fba · rgb(85, 127, 186)
+        sectiontabbar = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF004E87),  // #004e87 · rgb(0, 78, 135)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** The Trentonian (TT) */
     val TT = MngBrandPalette(
@@ -860,7 +1282,13 @@ object MngBrandPalettes {
         action = Color(0xFF004E87),  // #004e87 · rgb(0, 78, 135)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF357DAD)  // #357dad · rgb(53, 125, 173)
+        statusbar = Color(0xFF357DAD),  // #357dad · rgb(53, 125, 173)
+        sectiontabbar = Color(0xFF004E87),  // #004e87 · rgb(0, 78, 135)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** The Times Herald (TTH) */
     val TTH = MngBrandPalette(
@@ -872,7 +1300,13 @@ object MngBrandPalettes {
         action = Color(0xFFB93611),  // #b93611 · rgb(185, 54, 17)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFFBC3B10)  // #bc3b10 · rgb(188, 59, 16)
+        statusbar = Color(0xFFBC3B10),  // #bc3b10 · rgb(188, 59, 16)
+        sectiontabbar = Color(0xFFB93611),  // #b93611 · rgb(185, 54, 17)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Times-Tribune (TTT) */
     val TTT = MngBrandPalette(
@@ -884,7 +1318,13 @@ object MngBrandPalettes {
         action = Color(0xFF434953),  // #434953 · rgb(67, 73, 83)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF434953)  // #434953 · rgb(67, 73, 83)
+        statusbar = Color(0xFF434953),  // #434953 · rgb(67, 73, 83)
+        sectiontabbar = Color(0xFF434953),  // #434953 · rgb(67, 73, 83)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Ukiah Daily Journal (TUDJ) */
     val TUDJ = MngBrandPalette(
@@ -896,7 +1336,13 @@ object MngBrandPalettes {
         action = Color(0xFF32408F),  // #32408f · rgb(50, 64, 143)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF32408F)  // #32408f · rgb(50, 64, 143)
+        statusbar = Color(0xFF32408F),  // #32408f · rgb(50, 64, 143)
+        sectiontabbar = Color(0xFF32408F),  // #32408f · rgb(50, 64, 143)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Vacaville Reporter (TVR) */
     val TVR = MngBrandPalette(
@@ -908,7 +1354,13 @@ object MngBrandPalettes {
         action = Color(0xFF408FCB),  // #408fcb · rgb(64, 143, 203)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF408FCB)  // #408fcb · rgb(64, 143, 203)
+        statusbar = Color(0xFF408FCB),  // #408fcb · rgb(64, 143, 203)
+        sectiontabbar = Color(0xFF408FCB),  // #408fcb · rgb(64, 143, 203)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Vallejo Times Herald News (TVTH) */
     val TVTH = MngBrandPalette(
@@ -920,7 +1372,13 @@ object MngBrandPalettes {
         action = Color(0xFF8D092D),  // #8d092d · rgb(141, 9, 45)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF8D092D)  // #8d092d · rgb(141, 9, 45)
+        statusbar = Color(0xFF8D092D),  // #8d092d · rgb(141, 9, 45)
+        sectiontabbar = Color(0xFF8D092D),  // #8d092d · rgb(141, 9, 45)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Woodland Daily Democrat (TWDD) */
     val TWDD = MngBrandPalette(
@@ -932,7 +1390,13 @@ object MngBrandPalettes {
         action = Color(0xFF007639),  // #007639 · rgb(0, 118, 57)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF007639)  // #007639 · rgb(0, 118, 57)
+        statusbar = Color(0xFF007639),  // #007639 · rgb(0, 118, 57)
+        sectiontabbar = Color(0xFF007639),  // #007639 · rgb(0, 118, 57)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Whittier Daily News (TWDN) */
     val TWDN = MngBrandPalette(
@@ -944,7 +1408,13 @@ object MngBrandPalettes {
         action = Color(0xFFB93611),  // #b93611 · rgb(185, 54, 17)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFFA6371E)  // #a6371e · rgb(166, 55, 30)
+        statusbar = Color(0xFFA6371E),  // #a6371e · rgb(166, 55, 30)
+        sectiontabbar = Color(0xFFB93611),  // #b93611 · rgb(185, 54, 17)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        tablabelactive = Color(0xFFFF6900),  // #ff6900 · rgb(255, 105, 0)
+        tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
     /** Virginian Pilot (VP) */
     val VP = MngBrandPalette(
@@ -956,7 +1426,13 @@ object MngBrandPalettes {
         action = Color(0xFF005F7E),  // #005f7e · rgb(0, 95, 126)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        statusbar = Color(0xFF000000)  // #000000 · rgb(0, 0, 0)
+        statusbar = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        sectiontabbar = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabtext = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        sectiontabselected = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        sectiontabindicator = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelactive = Color(0xFF005F7E),  // #005f7e · rgb(0, 95, 126)
+        tablabelinactive = Color(0xFF000000)  // #000000 · rgb(0, 0, 0)
     )
 
     /** Palette for a market code or Gradle flavor name, e.g. "tdp". */

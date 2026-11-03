@@ -11,6 +11,13 @@
     <color name="mng_brand_alert">#FFCF000E</color> <!-- rgb(207, 0, 14) -->
     <color name="mng_brand_alerttext">#FFFFFFFF</color> <!-- rgb(255, 255, 255) -->
     <color name="mng_brand_statusbar">#FF000000</color> <!-- rgb(0, 0, 0) -->
+    <color name="mng_brand_sectiontabbar">#FF000000</color> <!-- rgb(0, 0, 0) -->
+    <color name="mng_brand_sectiontabtext">#FFFFFFFF</color> <!-- rgb(255, 255, 255) -->
+    <color name="mng_brand_sectiontabselected">#FFFFFFFF</color> <!-- rgb(255, 255, 255) -->
+    <color name="mng_brand_sectiontabindicator">#FFFFFFFF</color> <!-- rgb(255, 255, 255) -->
+    <color name="mng_brand_tablabelactive">#FF004E87</color> <!-- rgb(0, 78, 135) -->
+    <color name="mng_brand_tablabelinactive">#FFFFFFFF</color> <!-- rgb(255, 255, 255) -->
+    <color name="mng_brand_navicon">@color/mng_brand_navtext</color>
     <color name="mng_brand_buy">@color/mng_brand_action</color>
     <color name="mng_brand_continue">@color/mng_brand_action</color>
 </resources>
