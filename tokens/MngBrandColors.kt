@@ -59,10 +59,10 @@ object MngBrandPalettes {
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
         statusbar = Color(0xFF004E87),  // #004e87 · rgb(0, 78, 135)
-        sectiontabbar = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        sectiontabtext = Color(0xFF2C2D2D),  // #2c2d2d · rgb(44, 45, 45)
-        sectiontabselected = Color(0xFF004E87),  // #004e87 · rgb(0, 78, 135)
-        sectiontabindicator = Color(0xFF004E87),  // #004e87 · rgb(0, 78, 135)
+        sectiontabbar = Color(0xFF004E87),  // #004e87 · rgb(0, 78, 135)
+        sectiontabtext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabselected = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
+        sectiontabindicator = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
         tablabelactive = Color(0xFF9DD1F5),  // #9dd1f5 · rgb(157, 209, 245)
         tablabelinactive = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255)
     )
@@ -81,7 +81,7 @@ object MngBrandPalettes {
         sectiontabtext = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
         sectiontabselected = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
         sectiontabindicator = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
-        tablabelactive = Color(0xFF3674A9),  // #3674a9 · rgb(54, 116, 169)
+        tablabelactive = Color(0xFF005F7E),  // #005f7e · rgb(0, 95, 126)
         tablabelinactive = Color(0xFF000000)  // #000000 · rgb(0, 0, 0)
     )
     /** Hartford Courant (HC) */
@@ -135,8 +135,8 @@ object MngBrandPalettes {
         sectiontabtext = Color(0xFF333333),  // #333333 · rgb(51, 51, 51)
         sectiontabselected = Color(0xFF333333),  // #333333 · rgb(51, 51, 51)
         sectiontabindicator = Color(0xFF333333),  // #333333 · rgb(51, 51, 51)
-        tablabelactive = Color(0xFF4492E0),  // #4492e0 · rgb(68, 146, 224)
-        tablabelinactive = Color(0xFF000000)  // #000000 · rgb(0, 0, 0)
+        tablabelactive = Color(0xFF4591E0),  // #4591e0 · rgb(69, 145, 224)
+        tablabelinactive = Color(0xFF333333)  // #333333 · rgb(51, 51, 51)
     )
     /** Orange County Register (OCR) */
     val OCR = MngBrandPalette(
@@ -1161,7 +1161,7 @@ object MngBrandPalettes {
         sectiontabtext = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
         sectiontabselected = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
         sectiontabindicator = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
-        tablabelactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        tablabelactive = Color(0xFF00919E),  // #00919e · rgb(0, 145, 158)
         tablabelinactive = Color(0xFF000000)  // #000000 · rgb(0, 0, 0)
     )
     /** The San Bernardino Sun (TSBS) */

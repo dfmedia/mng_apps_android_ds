@@ -15,7 +15,7 @@
     <color name="mng_brand_sectiontabtext">#FF000000</color> <!-- rgb(0, 0, 0) -->
     <color name="mng_brand_sectiontabselected">#FF000000</color> <!-- rgb(0, 0, 0) -->
     <color name="mng_brand_sectiontabindicator">#FF000000</color> <!-- rgb(0, 0, 0) -->
-    <color name="mng_brand_tablabelactive">#FF000000</color> <!-- rgb(0, 0, 0) -->
+    <color name="mng_brand_tablabelactive">#FF00919E</color> <!-- rgb(0, 145, 158) -->
     <color name="mng_brand_tablabelinactive">#FF000000</color> <!-- rgb(0, 0, 0) -->
     <color name="mng_brand_navicon">@color/mng_brand_navtext</color>
     <color name="mng_brand_buy">@color/mng_brand_action</color>

@@ -17,6 +17,8 @@
     <dimen name="mng_component_paywall_login_side_margin">24dp</dimen> <!-- Side margins of paywall login buttons (LoginButtonStyle) -->
     <dimen name="mng_component_whats_new_continue_radius">6dp</dimen> <!-- What's New Continue button and outlined sheet buttons -->
     <dimen name="mng_component_continue_radius">9dp</dimen> <!-- Your News Continue button corner radius -->
+    <dimen name="mng_component_continue_width">152dp</dimen> <!-- Your News Continue button width (bg_continue.xml, 152 x 54 dp) -->
+    <dimen name="mng_component_continue_height">54dp</dimen> <!-- Your News Continue button height (bg_continue.xml, 152 x 54 dp) -->
     <dimen name="mng_component_account_button_radius">10dp</dimen> <!-- Manage subscription and delete account buttons -->
     <dimen name="mng_component_savings_label_radius">15dp</dimen> <!-- Savings label on the subscription screen -->
     <dimen name="mng_component_tab_bar_icon_height">24dp</dimen> <!-- Bottom-nav icon height -->
