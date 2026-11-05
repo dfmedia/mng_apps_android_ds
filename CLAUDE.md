@@ -1,6 +1,6 @@
 # Project instructions — MNG Android Design System
 
-**Read the Core instructions first:** [mng_apps_core_ds/CLAUDE.md](https://github.com/kuscholdMNG/mng_apps_core_ds/blob/main/CLAUDE.md) (local: `~/Github/mng_apps_core_ds/CLAUDE.md`). Every rule there applies here. This file adds only what is specific to Android.
+**Read the Core instructions first:** [mng_apps_core_ds/CLAUDE.md](https://github.com/dfmedia/mng_apps_core_ds/blob/main/CLAUDE.md) (local: `~/Github/mng_apps_core_ds/CLAUDE.md`). Every rule there applies here. This file adds only what is specific to Android.
 
 ## Scope
 
@@ -13,7 +13,7 @@ Typical Android-only items: Material Symbols glyphs, the notification icon, `sta
 | | |
 |---|---|
 | Figma | MNG Android Design System (`FGUeuRYhGudxo0VQdToZT9`) |
-| Repo | [kuscholdMNG/mng_apps_android_ds](https://github.com/kuscholdMNG/mng_apps_android_ds) · local `~/Github/mng_apps_android_ds` |
+| Repo | [dfmedia/mng_apps_android_ds](https://github.com/dfmedia/mng_apps_android_ds) · local `~/Github/mng_apps_android_ds` |
 | Shipped code | android-tribpub @ `1cfb069a6` (2026-10-15) |
 | Style guide | https://claude.ai/artifact/5MyLP13QSt52WGRgXW35ZJ |
 
