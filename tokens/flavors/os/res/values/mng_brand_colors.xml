@@ -17,7 +17,7 @@
     <color name="mng_brand_tablabelactive">#FF15919D</color> <!-- rgb(21, 145, 157) -->
     <color name="mng_brand_tablabelinactive">#FF333333</color> <!-- rgb(51, 51, 51) -->
     <color name="mng_brand_navicon">@color/mng_brand_navtext</color>
-    <color name="mng_brand_statusbar">@color/mng_brand_navbar</color> <!-- DEC-15 -->
+    <color name="mng_brand_statusbar">#FF000000</color> <!-- rgb(0, 0, 0), DEC-15 market override -->
     <color name="mng_brand_buy">@color/mng_brand_action</color>
     <color name="mng_brand_continue">@color/mng_brand_action</color>
 </resources>

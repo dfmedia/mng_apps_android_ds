@@ -18,12 +18,14 @@ data class MngBrandPalette(
     val sectiontabselected: Color,
     val sectiontabindicator: Color,
     val tablabelactive: Color,
-    val tablabelinactive: Color
+    val tablabelinactive: Color,
+    /** Accepted market override for the status bar (DEC-15); null = follows [navbar]. */
+    val statusbarOverride: Color? = null
 ) {
     /** Top bar icon tint: alias of [navtext] (DEC-13). */
     val navicon: Color get() = navtext
-    /** Status bar (Android only): alias of [navbar] (DEC-15). Exceptions: Core docs/SHELL-EXCEPTIONS.md. */
-    val statusbar: Color get() = navbar
+    /** Status bar (Android only): [navbar], or the market override (DEC-15, Core docs/SHELL-EXCEPTIONS.md). */
+    val statusbar: Color get() = statusbarOverride ?: navbar
     /** Alias of [action] (PLAT-04). */
     val buy: Color get() = action
     /** Alias of [action] (PLAT-04). */
@@ -80,7 +82,8 @@ object MngBrandPalettes {
         sectiontabselected = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
         sectiontabindicator = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
         tablabelactive = Color(0xFF005F7E),  // #005f7e · rgb(0, 95, 126)
-        tablabelinactive = Color(0xFF000000)  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        statusbarOverride = Color(0xFF000000)  // #000000 · rgb(0, 0, 0), DEC-15 override
     )
     /** Hartford Courant (HC) */
     val HC = MngBrandPalette(
@@ -114,7 +117,8 @@ object MngBrandPalettes {
         sectiontabselected = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
         sectiontabindicator = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
         tablabelactive = Color(0xFF539CC4),  // #539cc4 · rgb(83, 156, 196)
-        tablabelinactive = Color(0xFF000000)  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        statusbarOverride = Color(0xFF000000)  // #000000 · rgb(0, 0, 0), DEC-15 override
     )
     /** New York Daily News (NYDN) */
     val NYDN = MngBrandPalette(
@@ -131,7 +135,8 @@ object MngBrandPalettes {
         sectiontabselected = Color(0xFF333333),  // #333333 · rgb(51, 51, 51)
         sectiontabindicator = Color(0xFF333333),  // #333333 · rgb(51, 51, 51)
         tablabelactive = Color(0xFF4591E0),  // #4591e0 · rgb(69, 145, 224)
-        tablabelinactive = Color(0xFF333333)  // #333333 · rgb(51, 51, 51)
+        tablabelinactive = Color(0xFF333333),  // #333333 · rgb(51, 51, 51)
+        statusbarOverride = Color(0xFF333333)  // #333333 · rgb(51, 51, 51), DEC-15 override
     )
     /** Orange County Register (OCR) */
     val OCR = MngBrandPalette(
@@ -165,7 +170,8 @@ object MngBrandPalettes {
         sectiontabselected = Color(0xFF333333),  // #333333 · rgb(51, 51, 51)
         sectiontabindicator = Color(0xFF333333),  // #333333 · rgb(51, 51, 51)
         tablabelactive = Color(0xFF15919D),  // #15919d · rgb(21, 145, 157)
-        tablabelinactive = Color(0xFF333333)  // #333333 · rgb(51, 51, 51)
+        tablabelinactive = Color(0xFF333333),  // #333333 · rgb(51, 51, 51)
+        statusbarOverride = Color(0xFF000000)  // #000000 · rgb(0, 0, 0), DEC-15 override
     )
     /** Petaluma Argus-Courier (PAC) */
     val PAC = MngBrandPalette(
@@ -267,7 +273,8 @@ object MngBrandPalettes {
         sectiontabselected = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
         sectiontabindicator = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
         tablabelactive = Color(0xFF761113),  // #761113 · rgb(118, 17, 19)
-        tablabelinactive = Color(0xFF000000)  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        statusbarOverride = Color(0xFF000000)  // #000000 · rgb(0, 0, 0), DEC-15 override
     )
     /** Buffzone (TB) */
     val TB = MngBrandPalette(
@@ -1100,7 +1107,8 @@ object MngBrandPalettes {
         sectiontabselected = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
         sectiontabindicator = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
         tablabelactive = Color(0xFF00919E),  // #00919e · rgb(0, 145, 158)
-        tablabelinactive = Color(0xFF000000)  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        statusbarOverride = Color(0xFF000000)  // #000000 · rgb(0, 0, 0), DEC-15 override
     )
     /** The San Bernardino Sun (TSBS) */
     val TSBS = MngBrandPalette(
@@ -1355,7 +1363,8 @@ object MngBrandPalettes {
         sectiontabselected = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
         sectiontabindicator = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
         tablabelactive = Color(0xFF005F7E),  // #005f7e · rgb(0, 95, 126)
-        tablabelinactive = Color(0xFF000000)  // #000000 · rgb(0, 0, 0)
+        tablabelinactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
+        statusbarOverride = Color(0xFF000000)  // #000000 · rgb(0, 0, 0), DEC-15 override
     )
 
     /** Palette for a market code or Gradle flavor name, e.g. "tdp". */
