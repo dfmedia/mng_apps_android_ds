@@ -24,14 +24,16 @@ data class MngBrandPalette(
     /** Dark status-bar icons on Android 14 and below (windowLightStatusBar on). */
     val statusbarDarkIcons: Boolean = false,
     /** Dark status-bar icons on Android 15+ (API 35). */
-    val statusbarDarkIcons15: Boolean = false
+    val statusbarDarkIcons15: Boolean = false,
+    /** Android 15+ status bar when it is not [navbar] (DEC-15 production correction); null = follows [navbar]. */
+    val statusbar15Override: Color? = null
 ) {
     /** Top bar icon tint: alias of [navtext] (DEC-13). */
     val navicon: Color get() = navtext
     /** Status bar (Android only) on Android 14 and below: [navbar], or the market override (DEC-15, Core docs/SHELL-EXCEPTIONS.md). */
     val statusbar: Color get() = statusbarOverride ?: navbar
-    /** Status bar on Android 15+ (API 35): always [navbar] (DEC-15). */
-    val statusbar15: Color get() = navbar
+    /** Status bar on Android 15+ (API 35): [navbar], or the production correction (DEC-15). */
+    val statusbar15: Color get() = statusbar15Override ?: navbar
     /** Status-bar color for the running Android version, e.g. statusbarFor(Build.VERSION.SDK_INT). */
     fun statusbarFor(sdkInt: Int): Color = if (sdkInt >= 35) statusbar15 else statusbar
     /** True = dark status-bar icons (windowLightStatusBar on) for the running Android version (DEC-15). */
@@ -1123,7 +1125,9 @@ object MngBrandPalettes {
         sectiontabindicator = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
         tablabelactive = Color(0xFF00919E),  // #00919e · rgb(0, 145, 158)
         tablabelinactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
-        statusbarOverride = Color(0xFF000000)  // #000000 · rgb(0, 0, 0), DEC-15 override (Android 14 and below)
+        statusbarOverride = Color(0xFF000000),  // #000000 · rgb(0, 0, 0), DEC-15 override (Android 14 and below)
+        statusbarDarkIcons15 = true,  // Android 15+: status bar with dark icons (DEC-15)
+        statusbar15Override = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255), DEC-15 production correction (Android 15+)
     )
     /** The San Bernardino Sun (TSBS) */
     val TSBS = MngBrandPalette(
