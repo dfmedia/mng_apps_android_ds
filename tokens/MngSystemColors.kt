@@ -30,6 +30,14 @@ object MngSystemColors {
     /** Settings: summary / footer text (Core, per-platform value): `Settings_Summary_Item` (Android): 73 of 77 markets; exceptions documented only (DEC-16) */
     val settingsSummary = Color(0xFF000000)  // #000000 · 0, 0, 0
     // Android only
+    /** PageSuite eEdition tab container (Android): same in all 77 markets */
+    val eeditionTabContainer = Color(0xFFFFFFFF)  // #ffffff · 255, 255, 255
+    /** PageSuite eEdition tab text (Android): same in all 77 markets */
+    val eeditionTabText = Color(0xFFFFFFFF)  // #ffffff · 255, 255, 255
+    /** PageSuite eEdition inactive tab text (Android): same in all 77 markets */
+    val eeditionTabTextInactive = Color(0xFF999999)  // #999999 · 153, 153, 153
+    /** PageSuite eEdition brand color (Android): same in all 77 markets (passed as 10,22,51) */
+    val eeditionBrand = Color(0xFF0A1633)  // #0a1633 · 10, 22, 51
     /** `Alerts_Background_Disabled` (Android): same in all 77 markets */
     val alertsBackgroundDisabled = Color(0x00000000)  // #00000000 · 0, 0, 0, alpha 0.00
     /** `Alerts_Background_Enabled` (Android): same in all 77 markets */

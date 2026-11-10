@@ -12,6 +12,10 @@
     <color name="mng_system_settings_item_title">#FF000000</color> <!-- Settings: item title (Core, per-platform value): Settings_Item (Android): 72 of 77 markets; exceptions documented only (DEC-16) -->
     <color name="mng_system_settings_category_header">#FF000000</color> <!-- Settings: category header (Core, per-platform value): Settings_Category_Item (Android): 72 of 77 markets; exceptions documented only (DEC-16) -->
     <color name="mng_system_settings_summary">#FF000000</color> <!-- Settings: summary / footer text (Core, per-platform value): Settings_Summary_Item (Android): 73 of 77 markets; exceptions documented only (DEC-16) -->
+    <color name="mng_system_eedition_tab_container">#FFFFFFFF</color> <!-- PageSuite eEdition tab container (Android): same in all 77 markets -->
+    <color name="mng_system_eedition_tab_text">#FFFFFFFF</color> <!-- PageSuite eEdition tab text (Android): same in all 77 markets -->
+    <color name="mng_system_eedition_tab_text_inactive">#FF999999</color> <!-- PageSuite eEdition inactive tab text (Android): same in all 77 markets -->
+    <color name="mng_system_eedition_brand">#FF0A1633</color> <!-- PageSuite eEdition brand color (Android): same in all 77 markets (passed as 10,22,51) -->
     <color name="mng_system_alerts_background_disabled">#00000000</color> <!-- Alerts_Background_Disabled (Android): same in all 77 markets -->
     <color name="mng_system_alerts_background_enabled">#FF339933</color> <!-- Alerts_Background_Enabled (Android): same in all 77 markets -->
     <color name="mng_system_alerts_string_text_disabled">#FF000000</color> <!-- Alerts_String_Text_Disabled (Android): same in all 77 markets -->

@@ -14,6 +14,12 @@
     <item name="mng_breakpoint_width_large_inches" format="float" type="dimen">10.4</item> <!-- Section front: LARGE below, XLARGE above this physical screen width (inches) -->
     <dimen name="mng_breakpoint_tablet_config">500dp</dimen> <!-- sw500dp: tablet remote config, is_phone = false -->
     <dimen name="mng_breakpoint_tablet_resources">600dp</dimen> <!-- sw600dp: tablet article padding and type -->
+    <dimen name="mng_component_ad_banner_phone_width">320dp</dimen> <!-- Ad slot banner-phone width: first ad slot (phone), sticky footer banner (phone) -->
+    <dimen name="mng_component_ad_banner_phone_height">50dp</dimen> <!-- Ad slot banner-phone height: first ad slot (phone), sticky footer banner (phone) -->
+    <dimen name="mng_component_ad_banner_tablet_width">728dp</dimen> <!-- Ad slot banner-tablet width: first ad slot (tablet), sticky footer banner (tablet) -->
+    <dimen name="mng_component_ad_banner_tablet_height">90dp</dimen> <!-- Ad slot banner-tablet height: first ad slot (tablet), sticky footer banner (tablet) -->
+    <dimen name="mng_component_ad_box_width">300dp</dimen> <!-- Ad slot box width: other ad slots -->
+    <dimen name="mng_component_ad_box_height">250dp</dimen> <!-- Ad slot box height: other ad slots -->
     <dimen name="mng_component_paywall_login_side_margin">24dp</dimen> <!-- Side margins of paywall login buttons (LoginButtonStyle) -->
     <dimen name="mng_component_whats_new_continue_radius">6dp</dimen> <!-- What's New Continue button and outlined sheet buttons -->
     <dimen name="mng_component_continue_radius">9dp</dimen> <!-- Your News Continue button corner radius -->
