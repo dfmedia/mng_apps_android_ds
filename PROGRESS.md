@@ -28,3 +28,4 @@ Legend: ✅ done · 🔄 in progress · ⏸ waiting on review/input · ⬜ not s
 - **2026-11-05** — DEC-15: `statusbar` (MngBrandPalette.statusbar, @color/mng_brand_statusbar) now follows navbar (regenerated from mng_apps_core_ds). Figma: Components · App shell › 01 · Status bar exceptions; statusbar variables in Shell colors / Shell theme · Android (majority vs suggested override per exception market).
 - **2026-11-05** — DEC-15 overrides accepted: MngBrandPalette.statusbarOverride + flavor XML for DP, MC, NYDN, OS, SS, TSAR, VP (dark status bar). Figma: those 7 statusbar variables hold the shipped hex; samples relinked. See mng_apps_core_ds DEC-15.
 - **2026-11-10** — DEC-16: tokens/MngSystemColors.kt and res/values/mng_system_colors.xml (system colors: Core 11 + Android 84, plus 19 brand-following), generated from mng_apps_core_ds.
+- **2026-11-10** — Figma: System colors · Android (103 variables, 19 alias the Core Brand theme) collection (DEC-16; see mng_apps_core_ds).
