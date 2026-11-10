@@ -20,4 +20,6 @@
     <color name="mng_brand_statusbar">#FF333333</color> <!-- rgb(51, 51, 51), DEC-15 market override -->
     <color name="mng_brand_buy">@color/mng_brand_action</color>
     <color name="mng_brand_continue">@color/mng_brand_action</color>
+    <!-- Status-bar icons, Android 14 and below: true = dark icons (windowLightStatusBar). DEC-15 -->
+    <bool name="mng_brand_statusbar_dark_icons">false</bool>
 </resources>

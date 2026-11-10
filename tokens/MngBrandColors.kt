@@ -19,13 +19,23 @@ data class MngBrandPalette(
     val sectiontabindicator: Color,
     val tablabelactive: Color,
     val tablabelinactive: Color,
-    /** Accepted market override for the status bar (DEC-15); null = follows [navbar]. */
-    val statusbarOverride: Color? = null
+    /** Accepted market override for the status bar (DEC-15); null = follows [navbar]. Android 14 and below only. */
+    val statusbarOverride: Color? = null,
+    /** Dark status-bar icons on Android 14 and below (windowLightStatusBar on). */
+    val statusbarDarkIcons: Boolean = false,
+    /** Dark status-bar icons on Android 15+ (API 35). */
+    val statusbarDarkIcons15: Boolean = false
 ) {
     /** Top bar icon tint: alias of [navtext] (DEC-13). */
     val navicon: Color get() = navtext
-    /** Status bar (Android only): [navbar], or the market override (DEC-15, Core docs/SHELL-EXCEPTIONS.md). */
+    /** Status bar (Android only) on Android 14 and below: [navbar], or the market override (DEC-15, Core docs/SHELL-EXCEPTIONS.md). */
     val statusbar: Color get() = statusbarOverride ?: navbar
+    /** Status bar on Android 15+ (API 35): always [navbar] (DEC-15). */
+    val statusbar15: Color get() = navbar
+    /** Status-bar color for the running Android version, e.g. statusbarFor(Build.VERSION.SDK_INT). */
+    fun statusbarFor(sdkInt: Int): Color = if (sdkInt >= 35) statusbar15 else statusbar
+    /** True = dark status-bar icons (windowLightStatusBar on) for the running Android version (DEC-15). */
+    fun statusbarDarkIconsFor(sdkInt: Int): Boolean = if (sdkInt >= 35) statusbarDarkIcons15 else statusbarDarkIcons
     /** Alias of [action] (PLAT-04). */
     val buy: Color get() = action
     /** Alias of [action] (PLAT-04). */
@@ -83,7 +93,8 @@ object MngBrandPalettes {
         sectiontabindicator = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
         tablabelactive = Color(0xFF005F7E),  // #005f7e · rgb(0, 95, 126)
         tablabelinactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
-        statusbarOverride = Color(0xFF000000)  // #000000 · rgb(0, 0, 0), DEC-15 override
+        statusbarOverride = Color(0xFF000000),  // #000000 · rgb(0, 0, 0), DEC-15 override (Android 14 and below)
+        statusbarDarkIcons15 = true  // Android 15+: navbar with dark icons (DEC-15)
     )
     /** Hartford Courant (HC) */
     val HC = MngBrandPalette(
@@ -118,7 +129,8 @@ object MngBrandPalettes {
         sectiontabindicator = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
         tablabelactive = Color(0xFF539CC4),  // #539cc4 · rgb(83, 156, 196)
         tablabelinactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
-        statusbarOverride = Color(0xFF000000)  // #000000 · rgb(0, 0, 0), DEC-15 override
+        statusbarOverride = Color(0xFF000000),  // #000000 · rgb(0, 0, 0), DEC-15 override (Android 14 and below)
+        statusbarDarkIcons15 = true  // Android 15+: navbar with dark icons (DEC-15)
     )
     /** New York Daily News (NYDN) */
     val NYDN = MngBrandPalette(
@@ -136,7 +148,8 @@ object MngBrandPalettes {
         sectiontabindicator = Color(0xFF333333),  // #333333 · rgb(51, 51, 51)
         tablabelactive = Color(0xFF4591E0),  // #4591e0 · rgb(69, 145, 224)
         tablabelinactive = Color(0xFF333333),  // #333333 · rgb(51, 51, 51)
-        statusbarOverride = Color(0xFF333333)  // #333333 · rgb(51, 51, 51), DEC-15 override
+        statusbarOverride = Color(0xFF333333),  // #333333 · rgb(51, 51, 51), DEC-15 override (Android 14 and below)
+        statusbarDarkIcons15 = true  // Android 15+: navbar with dark icons (DEC-15)
     )
     /** Orange County Register (OCR) */
     val OCR = MngBrandPalette(
@@ -171,7 +184,8 @@ object MngBrandPalettes {
         sectiontabindicator = Color(0xFF333333),  // #333333 · rgb(51, 51, 51)
         tablabelactive = Color(0xFF15919D),  // #15919d · rgb(21, 145, 157)
         tablabelinactive = Color(0xFF333333),  // #333333 · rgb(51, 51, 51)
-        statusbarOverride = Color(0xFF000000)  // #000000 · rgb(0, 0, 0), DEC-15 override
+        statusbarOverride = Color(0xFF000000),  // #000000 · rgb(0, 0, 0), DEC-15 override (Android 14 and below)
+        statusbarDarkIcons15 = true  // Android 15+: navbar with dark icons (DEC-15)
     )
     /** Petaluma Argus-Courier (PAC) */
     val PAC = MngBrandPalette(
@@ -274,7 +288,8 @@ object MngBrandPalettes {
         sectiontabindicator = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
         tablabelactive = Color(0xFF761113),  // #761113 · rgb(118, 17, 19)
         tablabelinactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
-        statusbarOverride = Color(0xFF000000)  // #000000 · rgb(0, 0, 0), DEC-15 override
+        statusbarOverride = Color(0xFF000000),  // #000000 · rgb(0, 0, 0), DEC-15 override (Android 14 and below)
+        statusbarDarkIcons15 = true  // Android 15+: navbar with dark icons (DEC-15)
     )
     /** Buffzone (TB) */
     val TB = MngBrandPalette(
@@ -1108,7 +1123,8 @@ object MngBrandPalettes {
         sectiontabindicator = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
         tablabelactive = Color(0xFF00919E),  // #00919e · rgb(0, 145, 158)
         tablabelinactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
-        statusbarOverride = Color(0xFF000000)  // #000000 · rgb(0, 0, 0), DEC-15 override
+        statusbarOverride = Color(0xFF000000),  // #000000 · rgb(0, 0, 0), DEC-15 override (Android 14 and below)
+        statusbarDarkIcons15 = true  // Android 15+: navbar with dark icons (DEC-15)
     )
     /** The San Bernardino Sun (TSBS) */
     val TSBS = MngBrandPalette(
@@ -1364,7 +1380,8 @@ object MngBrandPalettes {
         sectiontabindicator = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
         tablabelactive = Color(0xFF005F7E),  // #005f7e · rgb(0, 95, 126)
         tablabelinactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
-        statusbarOverride = Color(0xFF000000)  // #000000 · rgb(0, 0, 0), DEC-15 override
+        statusbarOverride = Color(0xFF000000),  // #000000 · rgb(0, 0, 0), DEC-15 override (Android 14 and below)
+        statusbarDarkIcons15 = true  // Android 15+: navbar with dark icons (DEC-15)
     )
 
     /** Palette for a market code or Gradle flavor name, e.g. "tdp". */
