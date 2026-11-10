@@ -1,0 +1,32 @@
+# Compile check: builds the generated tokens and components on every push.
+# The files are generated in mng_apps_core_ds (Style Dictionary); a failure here means the generator needs a fix there.
+name: Compile check
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  android:
+    name: Kotlin + resources (all flavors)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "8.10.2"
+      - name: Compile Kotlin (tokens + components)
+        run: gradle --no-daemon --stacktrace compileBsReleaseKotlin
+      - name: Link resources for every flavor
+        run: |
+          set -euo pipefail
+          tasks=""
+          for d in tokens/flavors/*/; do f=$(basename "$d"); tasks="$tasks verify${f^}ReleaseResources"; done
+          echo "Checking $(ls -d tokens/flavors/*/ | wc -l) flavors"
+          gradle --no-daemon --continue $tasks
