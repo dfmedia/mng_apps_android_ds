@@ -11,7 +11,7 @@
     <!-- Primary, as shipped on the paywall Subscribe button: action fill, white uppercase label, 60dp, square. -->
     <style name="Widget.MNG.Button.Primary" parent="Widget.MaterialComponents.Button">
         <item name="backgroundTint">@color/mng_button_primary_fill</item>
-        <item name="android:textColor">@color/mng_button_primary_label</item>
+        <item name="android:textColor">@color/mng_button_primary_label_states</item>
         <item name="cornerRadius">@dimen/mng_button_primary_corner_radius</item>
         <item name="android:minHeight">@dimen/mng_button_primary_height</item>
         <item name="android:insetTop">0dp</item>
