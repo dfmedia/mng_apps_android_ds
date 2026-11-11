@@ -17,7 +17,7 @@
         <item name="android:insetTop">0dp</item>
         <item name="android:insetBottom">0dp</item>
         <item name="android:textAllCaps">true</item>
-        <!-- Label weight and size PROVISIONAL (MISSING-ASSETS 5.5). Future: one label style (BTN-02). -->
+        <!-- Label weight and size PROVISIONAL (MISSING-ASSETS 5.4). Future: one label style (BTN-02). -->
         <item name="android:fontFamily">sans-serif-medium</item>
         <item name="android:textSize">@dimen/mng_button_primary_text_size</item>
         <item name="android:letterSpacing">@dimen/mng_button_primary_letter_spacing</item>

@@ -7,7 +7,7 @@
     <color name="mng_button_link">#FF000000</color> <!-- rgb(0, 0, 0) · button.android.link.color -->
     <dimen name="mng_button_primary_height">60dp</dimen>
     <dimen name="mng_button_primary_corner_radius">0dp</dimen>
-    <!-- Label size and weight PROVISIONAL (MISSING-ASSETS 5.5): Material Button default. Future: BTN-02. -->
+    <!-- Label size and weight PROVISIONAL (MISSING-ASSETS 5.4): Material Button default. Future: BTN-02. -->
     <dimen name="mng_button_primary_text_size">14sp</dimen>
     <item name="mng_button_primary_letter_spacing" format="float" type="dimen">0.0892</item>
     <dimen name="mng_button_link_text_size">16sp</dimen>
