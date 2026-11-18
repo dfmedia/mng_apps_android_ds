@@ -35,8 +35,8 @@ object MngTypeStyles {
     val ARTICLE_HEADING_H4 = MngTextStyle(assetFile = "PT_Serif-Web-Bold.ttf", systemFont = false, bold = true, sizeSp = 18f)
     /** Article headline (Android `article-headline`): PT Serif Regular 21sp */
     val ARTICLE_HEADLINE = MngTextStyle(assetFile = "PT_Serif-Web-Regular.ttf", systemFont = false, bold = false, sizeSp = 21f)
-    /** Article subhead (Android `article-subhead`): font not in the export Regular 14sp (font not in the export) */
-    val ARTICLE_SUBHEAD = MngTextStyle(assetFile = null, systemFont = false, bold = false, sizeSp = 14f)
+    /** Article subhead (Android `article-subhead`): PT Serif Regular 14sp */
+    val ARTICLE_SUBHEAD = MngTextStyle(assetFile = "PT_Serif-Web-Regular.ttf", systemFont = false, bold = false, sizeSp = 14f)
     /** Bottom tab label (Android `nav-label`): Roboto Regular 10sp */
     val BOTTOM_TAB_LABEL = MngTextStyle(assetFile = null, systemFont = true, bold = false, sizeSp = 10f)
     /** Continue button label (Android `continue-label`): Open Sans SemiBold 15sp */
