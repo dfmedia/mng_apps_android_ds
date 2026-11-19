@@ -7,5 +7,15 @@
     <color name="mng_switch_off_thumb">#FFE5E5E5</color> <!-- Settings switch thumb, off (SwitchCompat) (DEC-14) -->
     <color name="mng_switch_off_track">#FFB9B9B9</color> <!-- Settings switch track, off (SwitchCompat) (DEC-14) -->
     <color name="mng_checkbox_unchecked">#FF757575</color> <!-- Your News topic checkbox, unchecked (checkbox_tint) (DEC-14) -->
+    <color name="mng_segmented_track">#FFEEEEEE</color> <!-- Segmented control track (MaterialButtonToggleGroup), radius 24dp (Apps team, DREAMT-4719) -->
+    <color name="mng_segmented_selected">#FFFFFFFF</color> <!-- Segmented control selected segment (TSAR #F5F5F5, documented only) (Apps team, DREAMT-4719) -->
+    <color name="mng_segmented_selected_label">#FF000000</color> <!-- Segmented control selected label (Apps team, DREAMT-4719) -->
+    <color name="mng_segmented_label">#FF696969</color> <!-- Segmented control unselected label (unselected segment is transparent) (Apps team, DREAMT-4719) -->
+    <color name="mng_loading_section_front">#FFD5D5D5</color> <!-- Section-front loading spinner (55dp) (Apps team, DREAMT-4719) -->
+    <color name="mng_loading_paywall">#FF2A2A2A</color> <!-- Paywall loading spinner (Apps team, DREAMT-4719) -->
+    <color name="mng_loading_top_bar_start">#FF49B0D6</color> <!-- Section-front top progress bar (2dp), gradient start (Apps team, DREAMT-4719) -->
+    <color name="mng_loading_top_bar_end">#FF35B5E4</color> <!-- Section-front top progress bar (2dp), gradient end (Apps team, DREAMT-4719) -->
+    <color name="mng_loading_web_view_bar">#FF1E88E5</color> <!-- Web view progress bar (Apps team, DREAMT-4719) -->
+    <color name="mng_loading_web_view_track">#FFE3F2FD</color> <!-- Web view progress bar track (Apps team, DREAMT-4719) -->
     <dimen name="mng_subscription_option_text_size">16sp</dimen> <!-- Subscription option text: system font 16sp; the Monthly line is bold -->
 </resources>
