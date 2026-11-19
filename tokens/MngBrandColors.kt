@@ -1125,9 +1125,7 @@ object MngBrandPalettes {
         sectiontabindicator = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
         tablabelactive = Color(0xFF00919E),  // #00919e · rgb(0, 145, 158)
         tablabelinactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
-        statusbarOverride = Color(0xFF000000),  // #000000 · rgb(0, 0, 0), DEC-15 override (Android 14 and below)
-        statusbarDarkIcons15 = true,  // Android 15+: status bar with dark icons (DEC-15)
-        statusbar15Override = Color(0xFFFFFFFF)  // #ffffff · rgb(255, 255, 255), DEC-15 production correction (Android 15+)
+        statusbarOverride = Color(0xFF000000)  // #000000 · rgb(0, 0, 0), DEC-15 override (Android 14 and below)
     )
     /** The San Bernardino Sun (TSBS) */
     val TSBS = MngBrandPalette(

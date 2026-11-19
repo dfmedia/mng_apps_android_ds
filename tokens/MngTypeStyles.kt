@@ -5,7 +5,7 @@ package com.mng.designsystem.tokens
 /**
  * One Android text style as shipped (android-tribpub styles and dimens).
  * [assetFile] is the font file the app loads from assets through TypefaceCache; null with [systemFont] = the system font (Roboto);
- * null without [systemFont] = the font is not in the export (MISSING-ASSETS 4.4).
+ * null without [systemFont] = the font is not in the export.
  */
 data class MngTextStyle(
     val assetFile: String?,
@@ -71,4 +71,6 @@ object MngTypeStyles {
     val SETTINGS_HEADER = MngTextStyle(assetFile = null, systemFont = true, bold = false, sizeSp = 16f)
     /** Settings row (Android `settings-item`): Roboto Regular 14sp */
     val SETTINGS_ROW = MngTextStyle(assetFile = null, systemFont = true, bold = false, sizeSp = 14f)
+    /** Top bar title (Android `toolbar-title`): Roboto Medium 16sp */
+    val TOP_BAR_TITLE = MngTextStyle(assetFile = null, systemFont = true, bold = false, sizeSp = 16f, allCaps = true)
 }

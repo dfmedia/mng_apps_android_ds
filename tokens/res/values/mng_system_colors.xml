@@ -8,7 +8,7 @@
     <color name="mng_system_ad_label">#FF999999</color> <!-- Ad slot: 'Advertisement' label: same on both apps. adLabelTextColor (iOS): 70 of 77 markets; exceptions documented only (DEC-16); advertisement_title (Android): same in all 77 markets -->
     <color name="mng_system_sections_menu_section_name">#FF000000</color> <!-- Sections menu: section name (Core, per-platform value): SectionsMenu_Text (Android): same in all 77 markets -->
     <color name="mng_system_sections_menu_divider">#FFF1F1F1</color> <!-- Sections menu: divider (Core, per-platform value): SectionMenu_Item_Divider (Android): 74 of 77 markets; exceptions documented only (DEC-16) -->
-    <color name="mng_system_settings_background">#FF333333</color> <!-- Settings: background (Core, per-platform value): Settings_Background (Android): 70 of 77 markets; exceptions documented only (DEC-16) -->
+    <color name="mng_system_settings_background">#FF333333</color> <!-- Settings: background (Core, per-platform value): Settings_Background (Android): 70 of 77 markets; exceptions documented only (DEC-16) Shipped value, never seen: The Settings theme paints the window and every view white in the ~70 markets that keep #333333; ct, dp, hc, mc, nydn, tod, vp set Settings_Background itself to white (Apps team, DREAMT-4719, 2026-11-19). -->
     <color name="mng_system_settings_item_title">#FF000000</color> <!-- Settings: item title (Core, per-platform value): Settings_Item (Android): 72 of 77 markets; exceptions documented only (DEC-16) -->
     <color name="mng_system_settings_category_header">#FF000000</color> <!-- Settings: category header (Core, per-platform value): Settings_Category_Item (Android): 72 of 77 markets; exceptions documented only (DEC-16) -->
     <color name="mng_system_settings_summary">#FF000000</color> <!-- Settings: summary / footer text (Core, per-platform value): Settings_Summary_Item (Android): 73 of 77 markets; exceptions documented only (DEC-16) -->
@@ -16,6 +16,10 @@
     <color name="mng_system_eedition_tab_text">#FFFFFFFF</color> <!-- PageSuite eEdition tab text (Android): same in all 77 markets -->
     <color name="mng_system_eedition_tab_text_inactive">#FF999999</color> <!-- PageSuite eEdition inactive tab text (Android): same in all 77 markets -->
     <color name="mng_system_eedition_brand">#FF0A1633</color> <!-- PageSuite eEdition brand color (Android): same in all 77 markets (passed as 10,22,51) -->
+    <color name="mng_system_widget_night_bg">#FF000000</color> <!-- Home-screen widget, night (values-night widget_bg): same in every market. Day value: #ffffff -->
+    <color name="mng_system_widget_night_divider1">#FFFFFFFF</color> <!-- Home-screen widget, night (values-night widget_divider1): same in every market. Day value: #000000 -->
+    <color name="mng_system_widget_night_divider2">#FFB8B8B8</color> <!-- Home-screen widget, night (values-night widget_divider2): same in every market. Day value: #b8b8b8 -->
+    <color name="mng_system_widget_night_text_main">#FFFFFFFF</color> <!-- Home-screen widget, night (values-night widget_text_main): same in every market. Day value: #000000 -->
     <color name="mng_system_alerts_background_disabled">#00000000</color> <!-- Alerts_Background_Disabled (Android): same in all 77 markets -->
     <color name="mng_system_alerts_background_enabled">#FF339933</color> <!-- Alerts_Background_Enabled (Android): same in all 77 markets -->
     <color name="mng_system_alerts_string_text_disabled">#FF000000</color> <!-- Alerts_String_Text_Disabled (Android): same in all 77 markets -->

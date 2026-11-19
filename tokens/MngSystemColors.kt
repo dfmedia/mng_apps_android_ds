@@ -21,7 +21,7 @@ object MngSystemColors {
     val sectionsMenuSectionName = Color(0xFF000000)  // #000000 · 0, 0, 0
     /** Sections menu: divider (Core, per-platform value): `SectionMenu_Item_Divider` (Android): 74 of 77 markets; exceptions documented only (DEC-16) */
     val sectionsMenuDivider = Color(0xFFF1F1F1)  // #f1f1f1 · 241, 241, 241
-    /** Settings: background (Core, per-platform value): `Settings_Background` (Android): 70 of 77 markets; exceptions documented only (DEC-16) */
+    /** Settings: background (Core, per-platform value): `Settings_Background` (Android): 70 of 77 markets; exceptions documented only (DEC-16) Shipped value, never seen: The Settings theme paints the window and every view white in the ~70 markets that keep #333333; ct, dp, hc, mc, nydn, tod, vp set Settings_Background itself to white (Apps team, DREAMT-4719, 2026-11-19). */
     val settingsBackground = Color(0xFF333333)  // #333333 · 51, 51, 51
     /** Settings: item title (Core, per-platform value): `Settings_Item` (Android): 72 of 77 markets; exceptions documented only (DEC-16) */
     val settingsItemTitle = Color(0xFF000000)  // #000000 · 0, 0, 0
@@ -38,6 +38,14 @@ object MngSystemColors {
     val eeditionTabTextInactive = Color(0xFF999999)  // #999999 · 153, 153, 153
     /** PageSuite eEdition brand color (Android): same in all 77 markets (passed as 10,22,51) */
     val eeditionBrand = Color(0xFF0A1633)  // #0a1633 · 10, 22, 51
+    /** Home-screen widget, night (values-night `widget_bg`): same in every market. Day value: #ffffff */
+    val widgetNightBg = Color(0xFF000000)  // #000000 · 0, 0, 0
+    /** Home-screen widget, night (values-night `widget_divider1`): same in every market. Day value: #000000 */
+    val widgetNightDivider1 = Color(0xFFFFFFFF)  // #ffffff · 255, 255, 255
+    /** Home-screen widget, night (values-night `widget_divider2`): same in every market. Day value: #b8b8b8 */
+    val widgetNightDivider2 = Color(0xFFB8B8B8)  // #b8b8b8 · 184, 184, 184
+    /** Home-screen widget, night (values-night `widget_text_main`): same in every market. Day value: #000000 */
+    val widgetNightTextMain = Color(0xFFFFFFFF)  // #ffffff · 255, 255, 255
     /** `Alerts_Background_Disabled` (Android): same in all 77 markets */
     val alertsBackgroundDisabled = Color(0x00000000)  // #00000000 · 0, 0, 0, alpha 0.00
     /** `Alerts_Background_Enabled` (Android): same in all 77 markets */
