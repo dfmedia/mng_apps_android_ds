@@ -40,7 +40,7 @@ data class MngBrandPalette(
     fun statusbarDarkIconsFor(sdkInt: Int): Boolean = if (sdkInt >= 35) statusbarDarkIcons15 else statusbarDarkIcons
     /** Alias of [action] (PLAT-04). */
     val buy: Color get() = action
-    /** Alias of [action] (PLAT-04). */
+    /** Your News Continue button and checked topic checkbox (Android only, DEC-21): alias of [action] (PLAT-04). */
     val continueButton: Color get() = action
 }
 
