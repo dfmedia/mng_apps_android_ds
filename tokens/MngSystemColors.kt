@@ -7,15 +7,15 @@ import androidx.compose.ui.graphics.Color
 /** System colors: majority value of every themed color that is not a brand, app shell, control or button token (DEC-16). */
 object MngSystemColors {
     // Core (same screen element on both apps)
-    /** Sections menu: background: same on both apps. `sectionListCellBackgroundColor` (iOS): same in all 77 markets; `SectionsMenu_Background` (Android): same in all 77 markets */
+    /** Sections menu: background: same on both apps. `sectionListCellBackgroundColor` (iOS): same in all 78 markets; `SectionsMenu_Background` (Android): same in all 77 markets */
     val sectionsMenuBackground = Color(0xFFFFFFFF)  // #ffffff · 255, 255, 255
-    /** Sections menu: group header text: same on both apps. `sectionListHeaderFontColor` (iOS): same in all 77 markets; `SectionMenu_Header_Text` (Android): 74 of 77 markets; exceptions documented only (DEC-16) */
+    /** Sections menu: group header text: same on both apps. `sectionListHeaderFontColor` (iOS): same in all 78 markets; `SectionMenu_Header_Text` (Android): 74 of 77 markets; exceptions documented only (DEC-16) */
     val sectionsMenuHeaderText = Color(0xFFFFFFFF)  // #ffffff · 255, 255, 255
-    /** Section front: background: same on both apps. `newsPageBackgroundColor` (iOS): same in all 77 markets; `SectionFront_Background` (Android): same in all 77 markets */
+    /** Section front: background: same on both apps. `newsPageBackgroundColor` (iOS): same in all 78 markets; `SectionFront_Background` (Android): same in all 77 markets */
     val sectionFrontBackground = Color(0xFFFFFFFF)  // #ffffff · 255, 255, 255
-    /** Ad slot: background: same on both apps. `cellAdBackgroundColor` (iOS): same in all 77 markets; `ad_background` (Android): same in all 77 markets */
+    /** Ad slot: background: same on both apps. `cellAdBackgroundColor` (iOS): same in all 78 markets; `ad_background` (Android): same in all 77 markets */
     val adBackground = Color(0xFFFFFFFF)  // #ffffff · 255, 255, 255
-    /** Ad slot: 'Advertisement' label: same on both apps. `adLabelTextColor` (iOS): 70 of 77 markets; exceptions documented only (DEC-16); `advertisement_title` (Android): same in all 77 markets */
+    /** Ad slot: 'Advertisement' label: same on both apps. `adLabelTextColor` (iOS): 71 of 78 markets; exceptions documented only (DEC-16); `advertisement_title` (Android): same in all 77 markets */
     val adLabel = Color(0xFF999999)  // #999999 · 153, 153, 153
     /** Sections menu: section name (Core, per-platform value): `SectionsMenu_Text` (Android): same in all 77 markets */
     val sectionsMenuSectionName = Color(0xFF000000)  // #000000 · 0, 0, 0

@@ -538,7 +538,7 @@ object MngBrandPalettes {
         tabbar = Color(0xFF0072B4),  // #0072b4 · rgb(0, 114, 180)
         tabactive = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
         tabinactive = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
-        action = Color(0xFF0072B4),  // #0072b4 · rgb(0, 114, 180)
+        action = Color(0xFF000000),  // #000000 · rgb(0, 0, 0)
         alert = Color(0xFFCF000E),  // #cf000e · rgb(207, 0, 14)
         alerttext = Color(0xFFFFFFFF),  // #ffffff · rgb(255, 255, 255)
         sectiontabbar = Color(0xFF0072B4),  // #0072b4 · rgb(0, 114, 180)

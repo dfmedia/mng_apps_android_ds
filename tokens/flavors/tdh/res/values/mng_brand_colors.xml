@@ -7,7 +7,7 @@
     <color name="mng_brand_tabbar">#FF0072B4</color> <!-- rgb(0, 114, 180) -->
     <color name="mng_brand_tabactive">#FF000000</color> <!-- rgb(0, 0, 0) -->
     <color name="mng_brand_tabinactive">#FFFFFFFF</color> <!-- rgb(255, 255, 255) -->
-    <color name="mng_brand_action">#FF0072B4</color> <!-- rgb(0, 114, 180) -->
+    <color name="mng_brand_action">#FF000000</color> <!-- rgb(0, 0, 0) -->
     <color name="mng_brand_alert">#FFCF000E</color> <!-- rgb(207, 0, 14) -->
     <color name="mng_brand_alerttext">#FFFFFFFF</color> <!-- rgb(255, 255, 255) -->
     <color name="mng_brand_sectiontabbar">#FF0072B4</color> <!-- rgb(0, 114, 180) -->
