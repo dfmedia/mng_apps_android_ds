@@ -31,5 +31,16 @@
     <dimen name="mng_component_audio_player_control">20dp</dimen> <!-- Persistent audio player play/pause and close (below the touch minimum) -->
     <dimen name="mng_component_author_contact_icon">22dp</dimen> <!-- Author contact icons (below the touch minimum) -->
     <dimen name="mng_component_overlay_close">40dp</dimen> <!-- Breaking-news and live-video overlay close button (below the touch minimum) -->
+    <dimen name="mng_component_top_bar_height">56dp</dimen> <!-- Top app bar height on phones (?actionBarSize) -->
+    <dimen name="mng_component_top_bar_height_tablet">64dp</dimen> <!-- Top app bar height at sw600dp and up -->
+    <dimen name="mng_component_section_tabs_height">48dp</dimen> <!-- Section tab height (Material TabLayout default) -->
+    <dimen name="mng_component_section_tabs_indicator">3dp</dimen> <!-- Section tab selected indicator height -->
+    <dimen name="mng_component_bottom_nav_height">56dp</dimen> <!-- Bottom navigation height, phones and tablets -->
+    <dimen name="mng_component_widget_min_width">300dp</dimen> <!-- Home-screen widget minWidth (2 x 1 cells, not resizable) -->
+    <dimen name="mng_component_widget_min_height">170dp</dimen> <!-- Home-screen widget minHeight -->
+    <dimen name="mng_component_elevation_toolbar">4dp</dimen> <!-- Top bar elevation when content scrolls under it (0 at rest) -->
+    <dimen name="mng_component_elevation_toolbar_secondary">1dp</dimen> <!-- Settings, web view and login toolbar elevation -->
+    <dimen name="mng_component_elevation_section_tabs">2dp</dimen> <!-- Section tab strip elevation -->
+    <dimen name="mng_component_elevation_card">3dp</dimen> <!-- Card elevation (special-section cards 4dp) -->
     <dimen name="mng_component_subscription_option_inset">14dp</dimen> <!-- Subscription option inner padding (controls notes: 14dp padding) -->
 </resources>

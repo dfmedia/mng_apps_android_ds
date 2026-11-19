@@ -39,6 +39,10 @@ object MngTypeStyles {
     val ARTICLE_SUBHEAD = MngTextStyle(assetFile = "PT_Serif-Web-Regular.ttf", systemFont = false, bold = false, sizeSp = 14f)
     /** Bottom tab label (Android `nav-label`): Roboto Regular 10sp */
     val BOTTOM_TAB_LABEL = MngTextStyle(assetFile = null, systemFont = true, bold = false, sizeSp = 10f)
+    /** Breaking-news banner text (Android `breaking-news`): Open Sans Bold 14sp */
+    val BREAKING_NEWS_BANNER_TEXT = MngTextStyle(assetFile = "OpenSans-Bold.ttf", systemFont = false, bold = true, sizeSp = 14f)
+    /** Button label (Android `button-label`): Roboto Medium 14sp */
+    val BUTTON_LABEL = MngTextStyle(assetFile = null, systemFont = true, bold = false, sizeSp = 14f, letterSpacingEm = 0.0893f, allCaps = true)
     /** Continue button label (Android `continue-label`): Open Sans SemiBold 15sp */
     val CONTINUE_BUTTON_LABEL = MngTextStyle(assetFile = "OpenSans-SemiBold.ttf", systemFont = false, bold = true, sizeSp = 15f)
     /** Image caption (Android `article-caption`): Open Sans Regular 14sp */
@@ -67,10 +71,16 @@ object MngTypeStyles {
     val SECTION_FRONT_LABEL_KICKER = MngTextStyle(assetFile = "OpenSans-Bold.ttf", systemFont = false, bold = true, sizeSp = 14f)
     /** Section tabs (Android `section-tab`): Open Sans SemiBold 12sp */
     val SECTION_TABS = MngTextStyle(assetFile = "OpenSans-SemiBold.ttf", systemFont = false, bold = true, sizeSp = 12f)
+    /** Segmented control label (Android `segmented-label`): Roboto Bold 17sp */
+    val SEGMENTED_CONTROL_LABEL = MngTextStyle(assetFile = null, systemFont = true, bold = true, sizeSp = 17f)
     /** Settings header (Android `settings-category`): Roboto Regular 16sp */
     val SETTINGS_HEADER = MngTextStyle(assetFile = null, systemFont = true, bold = false, sizeSp = 16f)
     /** Settings row (Android `settings-item`): Roboto Regular 14sp */
     val SETTINGS_ROW = MngTextStyle(assetFile = null, systemFont = true, bold = false, sizeSp = 14f)
+    /** Subscription option label (Android `subscription-option`): Roboto Bold 16sp */
+    val SUBSCRIPTION_OPTION_LABEL = MngTextStyle(assetFile = null, systemFont = true, bold = true, sizeSp = 16f)
     /** Top bar title (Android `toolbar-title`): Roboto Medium 16sp */
     val TOP_BAR_TITLE = MngTextStyle(assetFile = null, systemFont = true, bold = false, sizeSp = 16f, allCaps = true)
+    /** What's New button label (Android `whatsnew-label`): Open Sans Bold 14sp */
+    val WHATS_NEW_BUTTON_LABEL = MngTextStyle(assetFile = "OpenSans-Bold.ttf", systemFont = false, bold = true, sizeSp = 14f, allCaps = true)
 }
