@@ -17,7 +17,7 @@
         <item name="android:insetTop">0dp</item>
         <item name="android:insetBottom">0dp</item>
         <item name="android:textAllCaps">true</item>
-        <!-- Label weight and size PROVISIONAL (MISSING-ASSETS 5.4). Future: one label style (BTN-02). -->
+        <!-- Label: Roboto Medium 14sp, all caps (Apps team, DREAMT-4719, and the 2026-11-19 screenshots). Future: one label style (BTN-02). -->
         <item name="android:fontFamily">sans-serif-medium</item>
         <item name="android:textSize">@dimen/mng_button_primary_text_size</item>
         <item name="android:letterSpacing">@dimen/mng_button_primary_letter_spacing</item>
@@ -26,7 +26,7 @@
         <item name="android:stateListAnimator">@null</item>
     </style>
 
-    <!-- Text link, as shipped on the paywall Log In link: black, system sans 16sp, underlined.
+    <!-- Text link, as shipped on the paywall Log In link: the market Paywall_LoginButton_Text color (per flavor, DEC-23), system sans 16sp, underlined.
          Underline: call MngTextLink.underline(view) (MaterialButton has no XML underline attribute). -->
     <style name="Widget.MNG.Button.TextLink" parent="Widget.MaterialComponents.Button.TextButton">
         <item name="android:textColor">@color/mng_button_link</item>

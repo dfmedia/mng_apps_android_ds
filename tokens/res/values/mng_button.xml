@@ -4,7 +4,7 @@
     <color name="mng_button_primary_label">#FFFFFFFF</color> <!-- rgb(255, 255, 255) · button.primary.label -->
     <color name="mng_button_disabled_fill">#FFC1C8CB</color> <!-- rgb(193, 200, 203) · button.disabled.fill -->
     <color name="mng_button_disabled_label">#FF767676</color> <!-- rgb(118, 118, 118) · button.disabled.label -->
-    <color name="mng_button_link">#FF000000</color> <!-- rgb(0, 0, 0) · button.android.link.color -->
+    <color name="mng_button_link">#FF56A1DD</color> <!-- default: #56a1dd, 70 of 78 markets; each flavor's mng_brand_colors.xml sets its own (DEC-23) -->
     <dimen name="mng_button_primary_height">60dp</dimen>
     <dimen name="mng_button_primary_corner_radius">0dp</dimen>
     <!-- Label size and weight: Material Button default, confirmed by the Apps team 2026-11-19 (DREAMT-4719). Future: BTN-02. -->
