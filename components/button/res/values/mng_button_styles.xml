@@ -26,7 +26,7 @@
         <item name="android:stateListAnimator">@null</item>
     </style>
 
-    <!-- Text link, as shipped on the paywall Log In link: the market Paywall_LoginButton_Text color (per flavor, DEC-23), system sans 16sp, underlined.
+    <!-- Text link, as shipped on the paywall Log In link: the market link color (per flavor, DEC-24), system sans 16sp, underlined.
          Underline: call MngTextLink.underline(view) (MaterialButton has no XML underline attribute). -->
     <style name="Widget.MNG.Button.TextLink" parent="Widget.MaterialComponents.Button.TextButton">
         <item name="android:textColor">@color/mng_button_link</item>
