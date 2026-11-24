@@ -39,7 +39,7 @@
     <color name="mng_system_mainstyle_text_link_underline">#FF004E87</color> <!-- MainStyle_Text_Link_Underline (Android): 72 of 77 markets; exceptions documented only (DEC-16) -->
     <color name="mng_system_main_text">#FF191919</color> <!-- Main_Text (Android): same in all 77 markets -->
     <color name="mng_system_menu_ripple">#FFFFFFFF</color> <!-- Menu_Ripple (Android): same in all 77 markets -->
-    <color name="mng_system_paywall_loginbutton_text">#FF56A1DD</color> <!-- Paywall_LoginButton_Text (Android): 70 of 77 markets; exceptions documented only (DEC-16) -->
+    <color name="mng_system_paywall_loginbutton_text">#FF56A1DD</color> <!-- Paywall_LoginButton_Text (Android): 70 of 77 markets; exceptions documented only (DEC-16) Shipped value, not used by any code: the paywall log-in link is drawn in the color resource link (Apps team, DREAMT-4719, 2026-11-23, DEC-24). -->
     <color name="mng_system_paywall_text">#FF000000</color> <!-- Paywall_Text (Android): same in all 77 markets -->
     <color name="mng_system_search_results_author_color">#FF000000</color> <!-- Search_Results_Author_Color (Android): same in all 77 markets -->
     <color name="mng_system_search_results_blurb_color">#FF000000</color> <!-- Search_Results_Blurb_Color (Android): same in all 77 markets -->

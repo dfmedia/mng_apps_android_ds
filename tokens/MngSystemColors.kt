@@ -84,7 +84,7 @@ object MngSystemColors {
     val mainText = Color(0xFF191919)  // #191919 · 25, 25, 25
     /** `Menu_Ripple` (Android): same in all 77 markets */
     val menuRipple = Color(0xFFFFFFFF)  // #ffffff · 255, 255, 255
-    /** `Paywall_LoginButton_Text` (Android): 70 of 77 markets; exceptions documented only (DEC-16) */
+    /** `Paywall_LoginButton_Text` (Android): 70 of 77 markets; exceptions documented only (DEC-16) Shipped value, not used by any code: the paywall log-in link is drawn in the color resource link (Apps team, DREAMT-4719, 2026-11-23, DEC-24). */
     val paywallLoginbuttonText = Color(0xFF56A1DD)  // #56a1dd · 86, 161, 221
     /** `Paywall_Text` (Android): same in all 77 markets */
     val paywallText = Color(0xFF000000)  // #000000 · 0, 0, 0
