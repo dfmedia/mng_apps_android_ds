@@ -14,6 +14,10 @@
     <dimen name="mng_component_continue_height">54dp</dimen> <!-- Your News Continue button height (bg_continue.xml, 152 x 54 dp) -->
     <dimen name="mng_component_account_button_radius">10dp</dimen> <!-- Manage subscription and delete account buttons -->
     <dimen name="mng_component_savings_label_radius">15dp</dimen> <!-- Savings label on the subscription screen -->
+    <dimen name="mng_component_savings_label_padding_horizontal">15dp</dimen> <!-- Savings label left and right padding (the pill wraps its text) (DEC-25, Apps team, DREAMT-4719, 2026-11-24) -->
+    <dimen name="mng_component_savings_label_padding_vertical">5dp</dimen> <!-- Savings label top and bottom padding (about 29dp tall) (DEC-25, Apps team, DREAMT-4719, 2026-11-24) -->
+    <dimen name="mng_component_savings_label_border_width">2dp</dimen> <!-- Savings label outline width (buy color) (DEC-25, Apps team, DREAMT-4719, 2026-11-24) -->
+    <dimen name="mng_component_savings_label_end_margin">50dp</dimen> <!-- Savings label distance from the right edge; it overlaps the top edge of the Yearly option (DEC-25, Apps team, DREAMT-4719, 2026-11-24) -->
     <dimen name="mng_component_tab_bar_icon_height">24dp</dimen> <!-- Bottom-nav icon height -->
     <dimen name="mng_component_audio_player_control">20dp</dimen> <!-- Persistent audio player play/pause and close (below the touch minimum) -->
     <dimen name="mng_component_author_contact_icon">22dp</dimen> <!-- Author contact icons (below the touch minimum) -->

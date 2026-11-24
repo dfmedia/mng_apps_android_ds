@@ -24,4 +24,6 @@
     <bool name="mng_brand_statusbar_dark_icons">false</bool>
     <!-- Paywall log-in text link (color resource link), DEC-24 -->
     <color name="mng_button_link">#FF004E87</color> <!-- rgb(0, 78, 135) -->
+    <!-- Savings label text: btn_blue differs from the buy outline in this market, DEC-25 -->
+    <color name="mng_savings_label_text">#FF4FA8D1</color> <!-- rgb(79, 168, 209) -->
 </resources>
