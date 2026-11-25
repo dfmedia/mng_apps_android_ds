@@ -3,6 +3,7 @@
 <resources>
     <color name="mng_savings_label_text">@color/mng_brand_buy</color> <!-- Savings label text on the subscription screen: btn_blue, which equals the buy color in 72 of 77 markets; BS, DP, TDP, TPD, TSAR differ and set their own in the flavor (DEC-25, Apps team, DREAMT-4719, 2026-11-24) -->
     <color name="mng_savings_label_border">@color/mng_brand_buy</color> <!-- Savings label 2dp outline: the market buy color in every market (DEC-25, Apps team, DREAMT-4719, 2026-11-24) -->
+    <color name="mng_alerts_enable_fill">@color/mng_brand_action</color> <!-- Alerts Enable (CUSTOMIZE) fill, Alerts_Enable_Button_Background: the market action color in 58 of 77 markets; #DAA520 in 15, DP #4FA8D1, TPD #000000, OS and TSAR #FF6859 are exceptions, documented only (DEC-14; Apps team, DREAMT-4719, 2026-11-23) -->
     <color name="mng_subscription_option_label">#FFFFFFFF</color> <!-- Subscription option and primary button text (Paywall_Button_TextColor; 71 of 77 markets; exceptions documented only, DEC-14) -->
     <color name="mng_alerts_enable_label">#FFFFFFFF</color> <!-- Alerts enable button text (Alerts_Enable_Button_Text; 77 of 77 markets; exceptions documented only, DEC-14) -->
     <color name="mng_switch_off_thumb">#FFE5E5E5</color> <!-- Settings switch thumb, off (SwitchCompat) (DEC-14) -->

@@ -13,6 +13,8 @@
     <dimen name="mng_component_continue_width">152dp</dimen> <!-- Your News Continue button width (bg_continue.xml, 152 x 54 dp) -->
     <dimen name="mng_component_continue_height">54dp</dimen> <!-- Your News Continue button height (bg_continue.xml, 152 x 54 dp) -->
     <dimen name="mng_component_account_button_radius">10dp</dimen> <!-- Manage subscription and delete account buttons -->
+    <dimen name="mng_component_account_button_height_delete">52dp</dimen> <!-- Delete account bottom-sheet buttons height (Apps team, 2026-11-23) -->
+    <dimen name="mng_component_account_button_min_height">48dp</dimen> <!-- Manage subscription bottom-sheet buttons minimum height (Apps team, 2026-11-23) -->
     <dimen name="mng_component_savings_label_radius">15dp</dimen> <!-- Savings label on the subscription screen -->
     <dimen name="mng_component_savings_label_padding_horizontal">15dp</dimen> <!-- Savings label left and right padding (the pill wraps its text) (DEC-25, Apps team, DREAMT-4719, 2026-11-24) -->
     <dimen name="mng_component_savings_label_padding_vertical">5dp</dimen> <!-- Savings label top and bottom padding (about 29dp tall) (DEC-25, Apps team, DREAMT-4719, 2026-11-24) -->
@@ -33,6 +35,7 @@
     <dimen name="mng_component_elevation_toolbar_secondary">1dp</dimen> <!-- Settings, web view and login toolbar elevation -->
     <dimen name="mng_component_elevation_section_tabs">2dp</dimen> <!-- Section tab strip elevation -->
     <dimen name="mng_component_elevation_card">3dp</dimen> <!-- Card elevation (special-section cards 4dp) -->
+    <dimen name="mng_component_alerts_enable_padding">10dp</dimen> <!-- Alerts Enable (CUSTOMIZE) padding, about 40dp tall, full width, square corners (Apps team, 2026-11-19) -->
     <dimen name="mng_component_subscription_option_inset">14dp</dimen> <!-- Subscription option inner padding (controls notes: 14dp padding) -->
     <dimen name="mng_space_cell_margin">16dp</dimen> <!-- Outer margin of a section-front cell (both apps 16) -->
     <dimen name="mng_space_cell_gap">8dp</dimen> <!-- Space between elements inside a section-front cell (both apps 8) -->
