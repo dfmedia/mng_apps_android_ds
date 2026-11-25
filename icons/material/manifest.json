@@ -4,6 +4,7 @@
  "style": "outlined, weight 400 (\"-fill\" = filled)",
  "license": "Apache-2.0",
  "symbols": [
+  "format_size",
   "forward_10",
   "replay_10"
  ]
